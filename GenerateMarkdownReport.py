@@ -2,32 +2,8 @@ import os
 import csv
 import re
 import argparse
-import ast
 import statistics
 from pathlib import Path
-
-
-def parse_constants(pyfile):
-    """Parse simple constant assignments from a python file."""
-    constants = {}
-    if not os.path.exists(pyfile):
-        return constants
-    try:
-        with open(pyfile, 'r') as f:
-            tree = ast.parse(f.read(), filename=pyfile)
-        for node in tree.body:
-            if isinstance(node, ast.Assign):
-                for target in node.targets:
-                    if isinstance(target, ast.Name):
-                        try:
-                            value = ast.literal_eval(node.value)
-                        except Exception:
-                            value = None
-                        constants[target.id] = value
-    except Exception:
-        pass
-    return constants
-
 
 def find_epochs(setup_path):
     best = None
@@ -95,8 +71,6 @@ def collect_data(root_dir):
                 info = {
                     'best_epoch': best_num,
                     'metrics': metrics,
-                    'hyperparameters': parse_constants(os.path.join(setup_path, 'hyperparameters.py')),
-                    'options': parse_constants(os.path.join(setup_path, 'options.py')),
                     'loss_png': os.path.join(setup_path, last[1], 'loss.png') if last else None,
                     'confusion_matrices': [
                         os.path.join(setup_path, best_dir, img)
@@ -174,18 +148,6 @@ def write_report(data, root_dir, out_file):
                 f.write(f'### Seed: {seed}\n\n')
                 for setup_name, info in setups.items():
                     f.write(f'#### Setup: {setup_name}\n\n')
-                    hp = info['hyperparameters']
-                    if hp:
-                        f.write('**Hyperparameters:**\n')
-                        for k, v in list(hp.items())[:10]:
-                            f.write(f'- {k}: {v}\n')
-                        f.write('\n')
-                    opt = info['options']
-                    if opt:
-                        f.write('**Options:**\n')
-                        for k, v in list(opt.items())[:10]:
-                            f.write(f'- {k}: {v}\n')
-                        f.write('\n')
                     metrics = info['metrics']
                     if metrics:
                         f.write(f'*Best Epoch*: {info["best_epoch"]}\n\n')
@@ -195,16 +157,18 @@ def write_report(data, root_dir, out_file):
                     if info['loss_png'] and os.path.exists(info['loss_png']):
                         rel = os.path.relpath(info['loss_png'], root_dir)
                         f.write(f"![Loss Curve]({rel})\n\n")
-                    for img in info['confusion_matrices']:
-                        rel = os.path.relpath(img, root_dir)
-                        f.write(f"![{Path(img).name}]({rel})\n")
                     if info['confusion_matrices']:
-                        f.write('\n')
-                    for img in info['trend_imgs']:
-                        rel = os.path.relpath(img, root_dir)
-                        f.write(f"![{Path(img).name}]({rel})\n")
+                        f.write('<p>')
+                        for img in info['confusion_matrices']:
+                            rel = os.path.relpath(img, root_dir)
+                            f.write(f'<img src="{rel}" width="32%"/>')
+                        f.write('</p>\n')
                     if info['trend_imgs']:
-                        f.write('\n')
+                        f.write('<p>')
+                        for img in info['trend_imgs']:
+                            rel = os.path.relpath(img, root_dir)
+                            f.write(f'<img src="{rel}" width="32%"/>')
+                        f.write('</p>\n')
         f.write('## Analysis\n\n')
         f.write('### Average F1 Score per Setup and Noise Condition\n\n')
         f.write(format_table(mean_table) + '\n\n')
