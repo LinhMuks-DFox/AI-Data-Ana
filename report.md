@@ -6,30 +6,6 @@
 
 #### Setup: sound-power
 
-**Hyperparameters:**
-- N_Classes: 50
-- AudioDuration: 5
-- AudioSampleRate: 44100
-- ResampleTo: 16000
-- WarmpUp: 10
-- MaxLossOfVisualization: 10
-- LearningRate: 0.001
-- WeightDecay: 5e-05
-- ReduceLROnPlateauMetricsName: validate_loss
-- SchedulerParameter: {'gamma': 0.001, 'milestones': [40, 80]}
-
-**Options:**
-- CacheSize: 2000
-- Device: None
-- TrainID: None
-- SaveDirectory: None
-- CompileModel: False
-- BASE_DIR: None
-- DataSetPath: None
-- TrainSetPath: None
-- TestSetPath: None
-- ValidatePath: None
-
 *Best Epoch*: 437
 
 | F1 Score | Accuracy | Precision | Recall |
@@ -38,39 +14,9 @@
 
 ![Loss Curve](std005_bias0_1/experiment_seed_114514/2025-06-03-10-21-00-sound-power/epoch499/loss.png)
 
-![test_confusion_matrix_fig.png](std005_bias0_1/experiment_seed_114514/2025-06-03-10-21-00-sound-power/epoch437/test_confusion_matrix_fig.png)
-![train_confusion_matrix_fig.png](std005_bias0_1/experiment_seed_114514/2025-06-03-10-21-00-sound-power/epoch437/train_confusion_matrix_fig.png)
-![validate_confusion_matrix_fig.png](std005_bias0_1/experiment_seed_114514/2025-06-03-10-21-00-sound-power/epoch437/validate_confusion_matrix_fig.png)
-
-![test_metrics_trends.png](std005_bias0_1/experiment_seed_114514/2025-06-03-10-21-00-sound-power/test_metrics_trends.png)
-![train_metrics_trends.png](std005_bias0_1/experiment_seed_114514/2025-06-03-10-21-00-sound-power/train_metrics_trends.png)
-![validate_metrics_trends.png](std005_bias0_1/experiment_seed_114514/2025-06-03-10-21-00-sound-power/validate_metrics_trends.png)
-
+<p><img src="std005_bias0_1/experiment_seed_114514/2025-06-03-10-21-00-sound-power/epoch437/test_confusion_matrix_fig.png" width="32%"/><img src="std005_bias0_1/experiment_seed_114514/2025-06-03-10-21-00-sound-power/epoch437/train_confusion_matrix_fig.png" width="32%"/><img src="std005_bias0_1/experiment_seed_114514/2025-06-03-10-21-00-sound-power/epoch437/validate_confusion_matrix_fig.png" width="32%"/></p>
+<p><img src="std005_bias0_1/experiment_seed_114514/2025-06-03-10-21-00-sound-power/test_metrics_trends.png" width="32%"/><img src="std005_bias0_1/experiment_seed_114514/2025-06-03-10-21-00-sound-power/train_metrics_trends.png" width="32%"/><img src="std005_bias0_1/experiment_seed_114514/2025-06-03-10-21-00-sound-power/validate_metrics_trends.png" width="32%"/></p>
 #### Setup: ideal-latent
-
-**Hyperparameters:**
-- N_Classes: 50
-- AudioDuration: 5
-- WarmpUp: 10
-- MaxLossOfVisualization: 10
-- AudioSampleRate: 44100
-- LearningRate: 0.001
-- WeightDecay: 5e-05
-- ReduceLROnPlateauMetricsName: validate_loss
-- SchedulerParameter: {'gamma': 0.1, 'milestones': [40, 80]}
-- Epochs: None
-
-**Options:**
-- CacheSize: 2000
-- Device: None
-- TrainID: None
-- SaveDirectory: None
-- CompileModel: False
-- BASE_DIR: None
-- DataSetPath: None
-- TrainSetPath: None
-- TestSetPath: None
-- ValidatePath: None
 
 *Best Epoch*: 151
 
@@ -80,39 +26,9 @@
 
 ![Loss Curve](std005_bias0_1/experiment_seed_114514/2025-06-03-11-33-58-ideal-latent/epoch299/loss.png)
 
-![test_confusion_matrix_fig.png](std005_bias0_1/experiment_seed_114514/2025-06-03-11-33-58-ideal-latent/epoch151/test_confusion_matrix_fig.png)
-![train_confusion_matrix_fig.png](std005_bias0_1/experiment_seed_114514/2025-06-03-11-33-58-ideal-latent/epoch151/train_confusion_matrix_fig.png)
-![validate_confusion_matrix_fig.png](std005_bias0_1/experiment_seed_114514/2025-06-03-11-33-58-ideal-latent/epoch151/validate_confusion_matrix_fig.png)
-
-![test_metrics_trends.png](std005_bias0_1/experiment_seed_114514/2025-06-03-11-33-58-ideal-latent/test_metrics_trends.png)
-![train_metrics_trends.png](std005_bias0_1/experiment_seed_114514/2025-06-03-11-33-58-ideal-latent/train_metrics_trends.png)
-![validate_metrics_trends.png](std005_bias0_1/experiment_seed_114514/2025-06-03-11-33-58-ideal-latent/validate_metrics_trends.png)
-
+<p><img src="std005_bias0_1/experiment_seed_114514/2025-06-03-11-33-58-ideal-latent/epoch151/test_confusion_matrix_fig.png" width="32%"/><img src="std005_bias0_1/experiment_seed_114514/2025-06-03-11-33-58-ideal-latent/epoch151/train_confusion_matrix_fig.png" width="32%"/><img src="std005_bias0_1/experiment_seed_114514/2025-06-03-11-33-58-ideal-latent/epoch151/validate_confusion_matrix_fig.png" width="32%"/></p>
+<p><img src="std005_bias0_1/experiment_seed_114514/2025-06-03-11-33-58-ideal-latent/test_metrics_trends.png" width="32%"/><img src="std005_bias0_1/experiment_seed_114514/2025-06-03-11-33-58-ideal-latent/train_metrics_trends.png" width="32%"/><img src="std005_bias0_1/experiment_seed_114514/2025-06-03-11-33-58-ideal-latent/validate_metrics_trends.png" width="32%"/></p>
 #### Setup: End-2-end
-
-**Hyperparameters:**
-- N_Classes: 50
-- N_MIC: 5
-- AudioDuration: 5
-- WarmpUp: 10
-- MaxLossOfVisualization: 10
-- AudioSampleRate: 44100
-- LearningRate: 0.001
-- WeightDecay: 5e-05
-- ReduceLROnPlateauMetricsName: validate_loss
-- SchedulerParameter: {'gamma': 0.1, 'milestones': [40, 80]}
-
-**Options:**
-- CacheSize: 2000
-- Device: None
-- TrainID: None
-- SaveDirectory: None
-- CompileModel: False
-- BASE_DIR: None
-- DataSetPath: None
-- TrainSetPath: None
-- TestSetPath: None
-- ValidatePath: None
 
 *Best Epoch*: 276
 
@@ -122,41 +38,11 @@
 
 ![Loss Curve](std005_bias0_1/experiment_seed_114514/2025-06-03-13-12-34-End-2-end/epoch299/loss.png)
 
-![test_confusion_matrix_fig.png](std005_bias0_1/experiment_seed_114514/2025-06-03-13-12-34-End-2-end/epoch276/test_confusion_matrix_fig.png)
-![train_confusion_matrix_fig.png](std005_bias0_1/experiment_seed_114514/2025-06-03-13-12-34-End-2-end/epoch276/train_confusion_matrix_fig.png)
-![validate_confusion_matrix_fig.png](std005_bias0_1/experiment_seed_114514/2025-06-03-13-12-34-End-2-end/epoch276/validate_confusion_matrix_fig.png)
-
-![test_metrics_trends.png](std005_bias0_1/experiment_seed_114514/2025-06-03-13-12-34-End-2-end/test_metrics_trends.png)
-![train_metrics_trends.png](std005_bias0_1/experiment_seed_114514/2025-06-03-13-12-34-End-2-end/train_metrics_trends.png)
-![validate_metrics_trends.png](std005_bias0_1/experiment_seed_114514/2025-06-03-13-12-34-End-2-end/validate_metrics_trends.png)
-
+<p><img src="std005_bias0_1/experiment_seed_114514/2025-06-03-13-12-34-End-2-end/epoch276/test_confusion_matrix_fig.png" width="32%"/><img src="std005_bias0_1/experiment_seed_114514/2025-06-03-13-12-34-End-2-end/epoch276/train_confusion_matrix_fig.png" width="32%"/><img src="std005_bias0_1/experiment_seed_114514/2025-06-03-13-12-34-End-2-end/epoch276/validate_confusion_matrix_fig.png" width="32%"/></p>
+<p><img src="std005_bias0_1/experiment_seed_114514/2025-06-03-13-12-34-End-2-end/test_metrics_trends.png" width="32%"/><img src="std005_bias0_1/experiment_seed_114514/2025-06-03-13-12-34-End-2-end/train_metrics_trends.png" width="32%"/><img src="std005_bias0_1/experiment_seed_114514/2025-06-03-13-12-34-End-2-end/validate_metrics_trends.png" width="32%"/></p>
 ### Seed: experiment_seed_3047
 
 #### Setup: sound-power
-
-**Hyperparameters:**
-- N_Classes: 50
-- AudioDuration: 5
-- AudioSampleRate: 44100
-- ResampleTo: 16000
-- WarmpUp: 10
-- MaxLossOfVisualization: 10
-- LearningRate: 0.001
-- WeightDecay: 5e-05
-- ReduceLROnPlateauMetricsName: validate_loss
-- SchedulerParameter: {'gamma': 0.001, 'milestones': [40, 80]}
-
-**Options:**
-- CacheSize: 2000
-- Device: None
-- TrainID: None
-- SaveDirectory: None
-- CompileModel: False
-- BASE_DIR: None
-- DataSetPath: None
-- TrainSetPath: None
-- TestSetPath: None
-- ValidatePath: None
 
 *Best Epoch*: 401
 
@@ -166,39 +52,9 @@
 
 ![Loss Curve](std005_bias0_1/experiment_seed_3047/2025-06-03-02-47-05-sound-power/epoch499/loss.png)
 
-![test_confusion_matrix_fig.png](std005_bias0_1/experiment_seed_3047/2025-06-03-02-47-05-sound-power/epoch401/test_confusion_matrix_fig.png)
-![train_confusion_matrix_fig.png](std005_bias0_1/experiment_seed_3047/2025-06-03-02-47-05-sound-power/epoch401/train_confusion_matrix_fig.png)
-![validate_confusion_matrix_fig.png](std005_bias0_1/experiment_seed_3047/2025-06-03-02-47-05-sound-power/epoch401/validate_confusion_matrix_fig.png)
-
-![test_metrics_trends.png](std005_bias0_1/experiment_seed_3047/2025-06-03-02-47-05-sound-power/test_metrics_trends.png)
-![train_metrics_trends.png](std005_bias0_1/experiment_seed_3047/2025-06-03-02-47-05-sound-power/train_metrics_trends.png)
-![validate_metrics_trends.png](std005_bias0_1/experiment_seed_3047/2025-06-03-02-47-05-sound-power/validate_metrics_trends.png)
-
+<p><img src="std005_bias0_1/experiment_seed_3047/2025-06-03-02-47-05-sound-power/epoch401/test_confusion_matrix_fig.png" width="32%"/><img src="std005_bias0_1/experiment_seed_3047/2025-06-03-02-47-05-sound-power/epoch401/train_confusion_matrix_fig.png" width="32%"/><img src="std005_bias0_1/experiment_seed_3047/2025-06-03-02-47-05-sound-power/epoch401/validate_confusion_matrix_fig.png" width="32%"/></p>
+<p><img src="std005_bias0_1/experiment_seed_3047/2025-06-03-02-47-05-sound-power/test_metrics_trends.png" width="32%"/><img src="std005_bias0_1/experiment_seed_3047/2025-06-03-02-47-05-sound-power/train_metrics_trends.png" width="32%"/><img src="std005_bias0_1/experiment_seed_3047/2025-06-03-02-47-05-sound-power/validate_metrics_trends.png" width="32%"/></p>
 #### Setup: ideal-latent
-
-**Hyperparameters:**
-- N_Classes: 50
-- AudioDuration: 5
-- WarmpUp: 10
-- MaxLossOfVisualization: 10
-- AudioSampleRate: 44100
-- LearningRate: 0.001
-- WeightDecay: 5e-05
-- ReduceLROnPlateauMetricsName: validate_loss
-- SchedulerParameter: {'gamma': 0.1, 'milestones': [40, 80]}
-- Epochs: None
-
-**Options:**
-- CacheSize: 2000
-- Device: None
-- TrainID: None
-- SaveDirectory: None
-- CompileModel: False
-- BASE_DIR: None
-- DataSetPath: None
-- TrainSetPath: None
-- TestSetPath: None
-- ValidatePath: None
 
 *Best Epoch*: 231
 
@@ -208,39 +64,9 @@
 
 ![Loss Curve](std005_bias0_1/experiment_seed_3047/2025-06-03-04-02-19-ideal-latent/epoch299/loss.png)
 
-![test_confusion_matrix_fig.png](std005_bias0_1/experiment_seed_3047/2025-06-03-04-02-19-ideal-latent/epoch231/test_confusion_matrix_fig.png)
-![train_confusion_matrix_fig.png](std005_bias0_1/experiment_seed_3047/2025-06-03-04-02-19-ideal-latent/epoch231/train_confusion_matrix_fig.png)
-![validate_confusion_matrix_fig.png](std005_bias0_1/experiment_seed_3047/2025-06-03-04-02-19-ideal-latent/epoch231/validate_confusion_matrix_fig.png)
-
-![test_metrics_trends.png](std005_bias0_1/experiment_seed_3047/2025-06-03-04-02-19-ideal-latent/test_metrics_trends.png)
-![train_metrics_trends.png](std005_bias0_1/experiment_seed_3047/2025-06-03-04-02-19-ideal-latent/train_metrics_trends.png)
-![validate_metrics_trends.png](std005_bias0_1/experiment_seed_3047/2025-06-03-04-02-19-ideal-latent/validate_metrics_trends.png)
-
+<p><img src="std005_bias0_1/experiment_seed_3047/2025-06-03-04-02-19-ideal-latent/epoch231/test_confusion_matrix_fig.png" width="32%"/><img src="std005_bias0_1/experiment_seed_3047/2025-06-03-04-02-19-ideal-latent/epoch231/train_confusion_matrix_fig.png" width="32%"/><img src="std005_bias0_1/experiment_seed_3047/2025-06-03-04-02-19-ideal-latent/epoch231/validate_confusion_matrix_fig.png" width="32%"/></p>
+<p><img src="std005_bias0_1/experiment_seed_3047/2025-06-03-04-02-19-ideal-latent/test_metrics_trends.png" width="32%"/><img src="std005_bias0_1/experiment_seed_3047/2025-06-03-04-02-19-ideal-latent/train_metrics_trends.png" width="32%"/><img src="std005_bias0_1/experiment_seed_3047/2025-06-03-04-02-19-ideal-latent/validate_metrics_trends.png" width="32%"/></p>
 #### Setup: air-propagate-latent
-
-**Hyperparameters:**
-- N_Classes: 50
-- AudioDuration: 5
-- WarmpUp: 10
-- MaxLossOfVisualization: 10
-- AudioSampleRate: 44100
-- LearningRate: 0.001
-- WeightDecay: 5e-05
-- ReduceLROnPlateauMetricsName: validate_loss
-- SchedulerParameter: {'gamma': 0.1, 'milestones': [40, 80]}
-- Epochs: None
-
-**Options:**
-- CacheSize: 2000
-- Device: None
-- TrainID: None
-- SaveDirectory: None
-- CompileModel: False
-- BASE_DIR: None
-- DataSetPath: None
-- TrainSetPath: None
-- TestSetPath: None
-- ValidatePath: None
 
 *Best Epoch*: 310
 
@@ -250,39 +76,9 @@
 
 ![Loss Curve](std005_bias0_1/experiment_seed_3047/2025-06-03-04-44-56-air-propagate-latent/epoch499/loss.png)
 
-![test_confusion_matrix_fig.png](std005_bias0_1/experiment_seed_3047/2025-06-03-04-44-56-air-propagate-latent/epoch310/test_confusion_matrix_fig.png)
-![train_confusion_matrix_fig.png](std005_bias0_1/experiment_seed_3047/2025-06-03-04-44-56-air-propagate-latent/epoch310/train_confusion_matrix_fig.png)
-![validate_confusion_matrix_fig.png](std005_bias0_1/experiment_seed_3047/2025-06-03-04-44-56-air-propagate-latent/epoch310/validate_confusion_matrix_fig.png)
-
-![test_metrics_trends.png](std005_bias0_1/experiment_seed_3047/2025-06-03-04-44-56-air-propagate-latent/test_metrics_trends.png)
-![train_metrics_trends.png](std005_bias0_1/experiment_seed_3047/2025-06-03-04-44-56-air-propagate-latent/train_metrics_trends.png)
-![validate_metrics_trends.png](std005_bias0_1/experiment_seed_3047/2025-06-03-04-44-56-air-propagate-latent/validate_metrics_trends.png)
-
+<p><img src="std005_bias0_1/experiment_seed_3047/2025-06-03-04-44-56-air-propagate-latent/epoch310/test_confusion_matrix_fig.png" width="32%"/><img src="std005_bias0_1/experiment_seed_3047/2025-06-03-04-44-56-air-propagate-latent/epoch310/train_confusion_matrix_fig.png" width="32%"/><img src="std005_bias0_1/experiment_seed_3047/2025-06-03-04-44-56-air-propagate-latent/epoch310/validate_confusion_matrix_fig.png" width="32%"/></p>
+<p><img src="std005_bias0_1/experiment_seed_3047/2025-06-03-04-44-56-air-propagate-latent/test_metrics_trends.png" width="32%"/><img src="std005_bias0_1/experiment_seed_3047/2025-06-03-04-44-56-air-propagate-latent/train_metrics_trends.png" width="32%"/><img src="std005_bias0_1/experiment_seed_3047/2025-06-03-04-44-56-air-propagate-latent/validate_metrics_trends.png" width="32%"/></p>
 #### Setup: End-2-end
-
-**Hyperparameters:**
-- N_Classes: 50
-- N_MIC: 5
-- AudioDuration: 5
-- WarmpUp: 10
-- MaxLossOfVisualization: 10
-- AudioSampleRate: 44100
-- LearningRate: 0.001
-- WeightDecay: 5e-05
-- ReduceLROnPlateauMetricsName: validate_loss
-- SchedulerParameter: {'gamma': 0.1, 'milestones': [40, 80]}
-
-**Options:**
-- CacheSize: 2000
-- Device: cpu
-- TrainID: None
-- SaveDirectory: None
-- CompileModel: False
-- BASE_DIR: None
-- DataSetPath: None
-- TrainSetPath: None
-- TestSetPath: None
-- ValidatePath: None
 
 *Best Epoch*: 107
 
@@ -292,41 +88,11 @@
 
 ![Loss Curve](std005_bias0_1/experiment_seed_3047/2025-06-03-05-52-45-End-2-end/epoch499/loss.png)
 
-![test_confusion_matrix_fig.png](std005_bias0_1/experiment_seed_3047/2025-06-03-05-52-45-End-2-end/epoch107/test_confusion_matrix_fig.png)
-![train_confusion_matrix_fig.png](std005_bias0_1/experiment_seed_3047/2025-06-03-05-52-45-End-2-end/epoch107/train_confusion_matrix_fig.png)
-![validate_confusion_matrix_fig.png](std005_bias0_1/experiment_seed_3047/2025-06-03-05-52-45-End-2-end/epoch107/validate_confusion_matrix_fig.png)
-
-![test_metrics_trends.png](std005_bias0_1/experiment_seed_3047/2025-06-03-05-52-45-End-2-end/test_metrics_trends.png)
-![train_metrics_trends.png](std005_bias0_1/experiment_seed_3047/2025-06-03-05-52-45-End-2-end/train_metrics_trends.png)
-![validate_metrics_trends.png](std005_bias0_1/experiment_seed_3047/2025-06-03-05-52-45-End-2-end/validate_metrics_trends.png)
-
+<p><img src="std005_bias0_1/experiment_seed_3047/2025-06-03-05-52-45-End-2-end/epoch107/test_confusion_matrix_fig.png" width="32%"/><img src="std005_bias0_1/experiment_seed_3047/2025-06-03-05-52-45-End-2-end/epoch107/train_confusion_matrix_fig.png" width="32%"/><img src="std005_bias0_1/experiment_seed_3047/2025-06-03-05-52-45-End-2-end/epoch107/validate_confusion_matrix_fig.png" width="32%"/></p>
+<p><img src="std005_bias0_1/experiment_seed_3047/2025-06-03-05-52-45-End-2-end/test_metrics_trends.png" width="32%"/><img src="std005_bias0_1/experiment_seed_3047/2025-06-03-05-52-45-End-2-end/train_metrics_trends.png" width="32%"/><img src="std005_bias0_1/experiment_seed_3047/2025-06-03-05-52-45-End-2-end/validate_metrics_trends.png" width="32%"/></p>
 ### Seed: experiment_seed_4999
 
 #### Setup: sound-power
-
-**Hyperparameters:**
-- N_Classes: 50
-- AudioDuration: 5
-- AudioSampleRate: 44100
-- ResampleTo: 16000
-- WarmpUp: 10
-- MaxLossOfVisualization: 10
-- LearningRate: 0.001
-- WeightDecay: 5e-05
-- ReduceLROnPlateauMetricsName: validate_loss
-- SchedulerParameter: {'gamma': 0.001, 'milestones': [40, 80]}
-
-**Options:**
-- CacheSize: 2000
-- Device: None
-- TrainID: None
-- SaveDirectory: None
-- CompileModel: False
-- BASE_DIR: None
-- DataSetPath: None
-- TrainSetPath: None
-- TestSetPath: None
-- ValidatePath: None
 
 *Best Epoch*: 191
 
@@ -336,39 +102,9 @@
 
 ![Loss Curve](std005_bias0_1/experiment_seed_4999/2025-06-03-17-43-11-sound-power/epoch499/loss.png)
 
-![test_confusion_matrix_fig.png](std005_bias0_1/experiment_seed_4999/2025-06-03-17-43-11-sound-power/epoch191/test_confusion_matrix_fig.png)
-![train_confusion_matrix_fig.png](std005_bias0_1/experiment_seed_4999/2025-06-03-17-43-11-sound-power/epoch191/train_confusion_matrix_fig.png)
-![validate_confusion_matrix_fig.png](std005_bias0_1/experiment_seed_4999/2025-06-03-17-43-11-sound-power/epoch191/validate_confusion_matrix_fig.png)
-
-![test_metrics_trends.png](std005_bias0_1/experiment_seed_4999/2025-06-03-17-43-11-sound-power/test_metrics_trends.png)
-![train_metrics_trends.png](std005_bias0_1/experiment_seed_4999/2025-06-03-17-43-11-sound-power/train_metrics_trends.png)
-![validate_metrics_trends.png](std005_bias0_1/experiment_seed_4999/2025-06-03-17-43-11-sound-power/validate_metrics_trends.png)
-
+<p><img src="std005_bias0_1/experiment_seed_4999/2025-06-03-17-43-11-sound-power/epoch191/test_confusion_matrix_fig.png" width="32%"/><img src="std005_bias0_1/experiment_seed_4999/2025-06-03-17-43-11-sound-power/epoch191/train_confusion_matrix_fig.png" width="32%"/><img src="std005_bias0_1/experiment_seed_4999/2025-06-03-17-43-11-sound-power/epoch191/validate_confusion_matrix_fig.png" width="32%"/></p>
+<p><img src="std005_bias0_1/experiment_seed_4999/2025-06-03-17-43-11-sound-power/test_metrics_trends.png" width="32%"/><img src="std005_bias0_1/experiment_seed_4999/2025-06-03-17-43-11-sound-power/train_metrics_trends.png" width="32%"/><img src="std005_bias0_1/experiment_seed_4999/2025-06-03-17-43-11-sound-power/validate_metrics_trends.png" width="32%"/></p>
 #### Setup: ideal-latent
-
-**Hyperparameters:**
-- N_Classes: 50
-- AudioDuration: 5
-- WarmpUp: 10
-- MaxLossOfVisualization: 10
-- AudioSampleRate: 44100
-- LearningRate: 0.001
-- WeightDecay: 5e-05
-- ReduceLROnPlateauMetricsName: validate_loss
-- SchedulerParameter: {'gamma': 0.1, 'milestones': [40, 80]}
-- Epochs: None
-
-**Options:**
-- CacheSize: 2000
-- Device: None
-- TrainID: None
-- SaveDirectory: None
-- CompileModel: False
-- BASE_DIR: None
-- DataSetPath: None
-- TrainSetPath: None
-- TestSetPath: None
-- ValidatePath: None
 
 *Best Epoch*: 250
 
@@ -378,39 +114,9 @@
 
 ![Loss Curve](std005_bias0_1/experiment_seed_4999/2025-06-03-18-59-53-ideal-latent/epoch299/loss.png)
 
-![test_confusion_matrix_fig.png](std005_bias0_1/experiment_seed_4999/2025-06-03-18-59-53-ideal-latent/epoch250/test_confusion_matrix_fig.png)
-![train_confusion_matrix_fig.png](std005_bias0_1/experiment_seed_4999/2025-06-03-18-59-53-ideal-latent/epoch250/train_confusion_matrix_fig.png)
-![validate_confusion_matrix_fig.png](std005_bias0_1/experiment_seed_4999/2025-06-03-18-59-53-ideal-latent/epoch250/validate_confusion_matrix_fig.png)
-
-![test_metrics_trends.png](std005_bias0_1/experiment_seed_4999/2025-06-03-18-59-53-ideal-latent/test_metrics_trends.png)
-![train_metrics_trends.png](std005_bias0_1/experiment_seed_4999/2025-06-03-18-59-53-ideal-latent/train_metrics_trends.png)
-![validate_metrics_trends.png](std005_bias0_1/experiment_seed_4999/2025-06-03-18-59-53-ideal-latent/validate_metrics_trends.png)
-
+<p><img src="std005_bias0_1/experiment_seed_4999/2025-06-03-18-59-53-ideal-latent/epoch250/test_confusion_matrix_fig.png" width="32%"/><img src="std005_bias0_1/experiment_seed_4999/2025-06-03-18-59-53-ideal-latent/epoch250/train_confusion_matrix_fig.png" width="32%"/><img src="std005_bias0_1/experiment_seed_4999/2025-06-03-18-59-53-ideal-latent/epoch250/validate_confusion_matrix_fig.png" width="32%"/></p>
+<p><img src="std005_bias0_1/experiment_seed_4999/2025-06-03-18-59-53-ideal-latent/test_metrics_trends.png" width="32%"/><img src="std005_bias0_1/experiment_seed_4999/2025-06-03-18-59-53-ideal-latent/train_metrics_trends.png" width="32%"/><img src="std005_bias0_1/experiment_seed_4999/2025-06-03-18-59-53-ideal-latent/validate_metrics_trends.png" width="32%"/></p>
 #### Setup: air-propagate-latent
-
-**Hyperparameters:**
-- N_Classes: 50
-- AudioDuration: 5
-- WarmpUp: 10
-- MaxLossOfVisualization: 10
-- AudioSampleRate: 44100
-- LearningRate: 0.001
-- WeightDecay: 5e-05
-- ReduceLROnPlateauMetricsName: validate_loss
-- SchedulerParameter: {'gamma': 0.1, 'milestones': [40, 80]}
-- Epochs: None
-
-**Options:**
-- CacheSize: 2000
-- Device: None
-- TrainID: None
-- SaveDirectory: None
-- CompileModel: False
-- BASE_DIR: None
-- DataSetPath: None
-- TrainSetPath: None
-- TestSetPath: None
-- ValidatePath: None
 
 *Best Epoch*: 154
 
@@ -420,39 +126,9 @@
 
 ![Loss Curve](std005_bias0_1/experiment_seed_4999/2025-06-03-19-37-17-air-propagate-latent/epoch499/loss.png)
 
-![test_confusion_matrix_fig.png](std005_bias0_1/experiment_seed_4999/2025-06-03-19-37-17-air-propagate-latent/epoch154/test_confusion_matrix_fig.png)
-![train_confusion_matrix_fig.png](std005_bias0_1/experiment_seed_4999/2025-06-03-19-37-17-air-propagate-latent/epoch154/train_confusion_matrix_fig.png)
-![validate_confusion_matrix_fig.png](std005_bias0_1/experiment_seed_4999/2025-06-03-19-37-17-air-propagate-latent/epoch154/validate_confusion_matrix_fig.png)
-
-![test_metrics_trends.png](std005_bias0_1/experiment_seed_4999/2025-06-03-19-37-17-air-propagate-latent/test_metrics_trends.png)
-![train_metrics_trends.png](std005_bias0_1/experiment_seed_4999/2025-06-03-19-37-17-air-propagate-latent/train_metrics_trends.png)
-![validate_metrics_trends.png](std005_bias0_1/experiment_seed_4999/2025-06-03-19-37-17-air-propagate-latent/validate_metrics_trends.png)
-
+<p><img src="std005_bias0_1/experiment_seed_4999/2025-06-03-19-37-17-air-propagate-latent/epoch154/test_confusion_matrix_fig.png" width="32%"/><img src="std005_bias0_1/experiment_seed_4999/2025-06-03-19-37-17-air-propagate-latent/epoch154/train_confusion_matrix_fig.png" width="32%"/><img src="std005_bias0_1/experiment_seed_4999/2025-06-03-19-37-17-air-propagate-latent/epoch154/validate_confusion_matrix_fig.png" width="32%"/></p>
+<p><img src="std005_bias0_1/experiment_seed_4999/2025-06-03-19-37-17-air-propagate-latent/test_metrics_trends.png" width="32%"/><img src="std005_bias0_1/experiment_seed_4999/2025-06-03-19-37-17-air-propagate-latent/train_metrics_trends.png" width="32%"/><img src="std005_bias0_1/experiment_seed_4999/2025-06-03-19-37-17-air-propagate-latent/validate_metrics_trends.png" width="32%"/></p>
 #### Setup: End-2-end
-
-**Hyperparameters:**
-- N_Classes: 50
-- N_MIC: 5
-- AudioDuration: 5
-- WarmpUp: 10
-- MaxLossOfVisualization: 10
-- AudioSampleRate: 44100
-- LearningRate: 0.001
-- WeightDecay: 5e-05
-- ReduceLROnPlateauMetricsName: validate_loss
-- SchedulerParameter: {'gamma': 0.1, 'milestones': [40, 80]}
-
-**Options:**
-- CacheSize: 2000
-- Device: None
-- TrainID: None
-- SaveDirectory: None
-- CompileModel: False
-- BASE_DIR: None
-- DataSetPath: None
-- TrainSetPath: None
-- TestSetPath: None
-- ValidatePath: None
 
 *Best Epoch*: 240
 
@@ -462,41 +138,11 @@
 
 ![Loss Curve](std005_bias0_1/experiment_seed_4999/2025-06-03-20-32-31-End-2-end/epoch299/loss.png)
 
-![test_confusion_matrix_fig.png](std005_bias0_1/experiment_seed_4999/2025-06-03-20-32-31-End-2-end/epoch240/test_confusion_matrix_fig.png)
-![train_confusion_matrix_fig.png](std005_bias0_1/experiment_seed_4999/2025-06-03-20-32-31-End-2-end/epoch240/train_confusion_matrix_fig.png)
-![validate_confusion_matrix_fig.png](std005_bias0_1/experiment_seed_4999/2025-06-03-20-32-31-End-2-end/epoch240/validate_confusion_matrix_fig.png)
-
-![test_metrics_trends.png](std005_bias0_1/experiment_seed_4999/2025-06-03-20-32-31-End-2-end/test_metrics_trends.png)
-![train_metrics_trends.png](std005_bias0_1/experiment_seed_4999/2025-06-03-20-32-31-End-2-end/train_metrics_trends.png)
-![validate_metrics_trends.png](std005_bias0_1/experiment_seed_4999/2025-06-03-20-32-31-End-2-end/validate_metrics_trends.png)
-
+<p><img src="std005_bias0_1/experiment_seed_4999/2025-06-03-20-32-31-End-2-end/epoch240/test_confusion_matrix_fig.png" width="32%"/><img src="std005_bias0_1/experiment_seed_4999/2025-06-03-20-32-31-End-2-end/epoch240/train_confusion_matrix_fig.png" width="32%"/><img src="std005_bias0_1/experiment_seed_4999/2025-06-03-20-32-31-End-2-end/epoch240/validate_confusion_matrix_fig.png" width="32%"/></p>
+<p><img src="std005_bias0_1/experiment_seed_4999/2025-06-03-20-32-31-End-2-end/test_metrics_trends.png" width="32%"/><img src="std005_bias0_1/experiment_seed_4999/2025-06-03-20-32-31-End-2-end/train_metrics_trends.png" width="32%"/><img src="std005_bias0_1/experiment_seed_4999/2025-06-03-20-32-31-End-2-end/validate_metrics_trends.png" width="32%"/></p>
 ### Seed: experiment_seed_65536
 
 #### Setup: sound-power
-
-**Hyperparameters:**
-- N_Classes: 50
-- AudioDuration: 5
-- AudioSampleRate: 44100
-- ResampleTo: 16000
-- WarmpUp: 10
-- MaxLossOfVisualization: 10
-- LearningRate: 0.001
-- WeightDecay: 5e-05
-- ReduceLROnPlateauMetricsName: validate_loss
-- SchedulerParameter: {'gamma': 0.001, 'milestones': [40, 80]}
-
-**Options:**
-- CacheSize: 2000
-- Device: None
-- TrainID: None
-- SaveDirectory: None
-- CompileModel: False
-- BASE_DIR: None
-- DataSetPath: None
-- TrainSetPath: None
-- TestSetPath: None
-- ValidatePath: None
 
 *Best Epoch*: 240
 
@@ -506,39 +152,9 @@
 
 ![Loss Curve](std005_bias0_1/experiment_seed_65536/2025-06-03-13-52-18-sound-power/epoch499/loss.png)
 
-![test_confusion_matrix_fig.png](std005_bias0_1/experiment_seed_65536/2025-06-03-13-52-18-sound-power/epoch240/test_confusion_matrix_fig.png)
-![train_confusion_matrix_fig.png](std005_bias0_1/experiment_seed_65536/2025-06-03-13-52-18-sound-power/epoch240/train_confusion_matrix_fig.png)
-![validate_confusion_matrix_fig.png](std005_bias0_1/experiment_seed_65536/2025-06-03-13-52-18-sound-power/epoch240/validate_confusion_matrix_fig.png)
-
-![test_metrics_trends.png](std005_bias0_1/experiment_seed_65536/2025-06-03-13-52-18-sound-power/test_metrics_trends.png)
-![train_metrics_trends.png](std005_bias0_1/experiment_seed_65536/2025-06-03-13-52-18-sound-power/train_metrics_trends.png)
-![validate_metrics_trends.png](std005_bias0_1/experiment_seed_65536/2025-06-03-13-52-18-sound-power/validate_metrics_trends.png)
-
+<p><img src="std005_bias0_1/experiment_seed_65536/2025-06-03-13-52-18-sound-power/epoch240/test_confusion_matrix_fig.png" width="32%"/><img src="std005_bias0_1/experiment_seed_65536/2025-06-03-13-52-18-sound-power/epoch240/train_confusion_matrix_fig.png" width="32%"/><img src="std005_bias0_1/experiment_seed_65536/2025-06-03-13-52-18-sound-power/epoch240/validate_confusion_matrix_fig.png" width="32%"/></p>
+<p><img src="std005_bias0_1/experiment_seed_65536/2025-06-03-13-52-18-sound-power/test_metrics_trends.png" width="32%"/><img src="std005_bias0_1/experiment_seed_65536/2025-06-03-13-52-18-sound-power/train_metrics_trends.png" width="32%"/><img src="std005_bias0_1/experiment_seed_65536/2025-06-03-13-52-18-sound-power/validate_metrics_trends.png" width="32%"/></p>
 #### Setup: ideal-latent
-
-**Hyperparameters:**
-- N_Classes: 50
-- AudioDuration: 5
-- WarmpUp: 10
-- MaxLossOfVisualization: 10
-- AudioSampleRate: 44100
-- LearningRate: 0.001
-- WeightDecay: 5e-05
-- ReduceLROnPlateauMetricsName: validate_loss
-- SchedulerParameter: {'gamma': 0.1, 'milestones': [40, 80]}
-- Epochs: None
-
-**Options:**
-- CacheSize: 2000
-- Device: None
-- TrainID: None
-- SaveDirectory: None
-- CompileModel: False
-- BASE_DIR: None
-- DataSetPath: None
-- TrainSetPath: None
-- TestSetPath: None
-- ValidatePath: None
 
 *Best Epoch*: 144
 
@@ -548,39 +164,9 @@
 
 ![Loss Curve](std005_bias0_1/experiment_seed_65536/2025-06-03-15-13-33-ideal-latent/epoch299/loss.png)
 
-![test_confusion_matrix_fig.png](std005_bias0_1/experiment_seed_65536/2025-06-03-15-13-33-ideal-latent/epoch144/test_confusion_matrix_fig.png)
-![train_confusion_matrix_fig.png](std005_bias0_1/experiment_seed_65536/2025-06-03-15-13-33-ideal-latent/epoch144/train_confusion_matrix_fig.png)
-![validate_confusion_matrix_fig.png](std005_bias0_1/experiment_seed_65536/2025-06-03-15-13-33-ideal-latent/epoch144/validate_confusion_matrix_fig.png)
-
-![test_metrics_trends.png](std005_bias0_1/experiment_seed_65536/2025-06-03-15-13-33-ideal-latent/test_metrics_trends.png)
-![train_metrics_trends.png](std005_bias0_1/experiment_seed_65536/2025-06-03-15-13-33-ideal-latent/train_metrics_trends.png)
-![validate_metrics_trends.png](std005_bias0_1/experiment_seed_65536/2025-06-03-15-13-33-ideal-latent/validate_metrics_trends.png)
-
+<p><img src="std005_bias0_1/experiment_seed_65536/2025-06-03-15-13-33-ideal-latent/epoch144/test_confusion_matrix_fig.png" width="32%"/><img src="std005_bias0_1/experiment_seed_65536/2025-06-03-15-13-33-ideal-latent/epoch144/train_confusion_matrix_fig.png" width="32%"/><img src="std005_bias0_1/experiment_seed_65536/2025-06-03-15-13-33-ideal-latent/epoch144/validate_confusion_matrix_fig.png" width="32%"/></p>
+<p><img src="std005_bias0_1/experiment_seed_65536/2025-06-03-15-13-33-ideal-latent/test_metrics_trends.png" width="32%"/><img src="std005_bias0_1/experiment_seed_65536/2025-06-03-15-13-33-ideal-latent/train_metrics_trends.png" width="32%"/><img src="std005_bias0_1/experiment_seed_65536/2025-06-03-15-13-33-ideal-latent/validate_metrics_trends.png" width="32%"/></p>
 #### Setup: air-propagate-latent
-
-**Hyperparameters:**
-- N_Classes: 50
-- AudioDuration: 5
-- WarmpUp: 10
-- MaxLossOfVisualization: 10
-- AudioSampleRate: 44100
-- LearningRate: 0.001
-- WeightDecay: 5e-05
-- ReduceLROnPlateauMetricsName: validate_loss
-- SchedulerParameter: {'gamma': 0.1, 'milestones': [40, 80]}
-- Epochs: None
-
-**Options:**
-- CacheSize: 2000
-- Device: None
-- TrainID: None
-- SaveDirectory: None
-- CompileModel: False
-- BASE_DIR: None
-- DataSetPath: None
-- TrainSetPath: None
-- TestSetPath: None
-- ValidatePath: None
 
 *Best Epoch*: 129
 
@@ -590,39 +176,9 @@
 
 ![Loss Curve](std005_bias0_1/experiment_seed_65536/2025-06-03-15-55-45-air-propagate-latent/epoch499/loss.png)
 
-![test_confusion_matrix_fig.png](std005_bias0_1/experiment_seed_65536/2025-06-03-15-55-45-air-propagate-latent/epoch129/test_confusion_matrix_fig.png)
-![train_confusion_matrix_fig.png](std005_bias0_1/experiment_seed_65536/2025-06-03-15-55-45-air-propagate-latent/epoch129/train_confusion_matrix_fig.png)
-![validate_confusion_matrix_fig.png](std005_bias0_1/experiment_seed_65536/2025-06-03-15-55-45-air-propagate-latent/epoch129/validate_confusion_matrix_fig.png)
-
-![test_metrics_trends.png](std005_bias0_1/experiment_seed_65536/2025-06-03-15-55-45-air-propagate-latent/test_metrics_trends.png)
-![train_metrics_trends.png](std005_bias0_1/experiment_seed_65536/2025-06-03-15-55-45-air-propagate-latent/train_metrics_trends.png)
-![validate_metrics_trends.png](std005_bias0_1/experiment_seed_65536/2025-06-03-15-55-45-air-propagate-latent/validate_metrics_trends.png)
-
+<p><img src="std005_bias0_1/experiment_seed_65536/2025-06-03-15-55-45-air-propagate-latent/epoch129/test_confusion_matrix_fig.png" width="32%"/><img src="std005_bias0_1/experiment_seed_65536/2025-06-03-15-55-45-air-propagate-latent/epoch129/train_confusion_matrix_fig.png" width="32%"/><img src="std005_bias0_1/experiment_seed_65536/2025-06-03-15-55-45-air-propagate-latent/epoch129/validate_confusion_matrix_fig.png" width="32%"/></p>
+<p><img src="std005_bias0_1/experiment_seed_65536/2025-06-03-15-55-45-air-propagate-latent/test_metrics_trends.png" width="32%"/><img src="std005_bias0_1/experiment_seed_65536/2025-06-03-15-55-45-air-propagate-latent/train_metrics_trends.png" width="32%"/><img src="std005_bias0_1/experiment_seed_65536/2025-06-03-15-55-45-air-propagate-latent/validate_metrics_trends.png" width="32%"/></p>
 #### Setup: End-2-end
-
-**Hyperparameters:**
-- N_Classes: 50
-- N_MIC: 5
-- AudioDuration: 5
-- WarmpUp: 10
-- MaxLossOfVisualization: 10
-- AudioSampleRate: 44100
-- LearningRate: 0.001
-- WeightDecay: 5e-05
-- ReduceLROnPlateauMetricsName: validate_loss
-- SchedulerParameter: {'gamma': 0.1, 'milestones': [40, 80]}
-
-**Options:**
-- CacheSize: 2000
-- Device: None
-- TrainID: None
-- SaveDirectory: None
-- CompileModel: False
-- BASE_DIR: None
-- DataSetPath: None
-- TrainSetPath: None
-- TestSetPath: None
-- ValidatePath: None
 
 *Best Epoch*: 241
 
@@ -632,43 +188,13 @@
 
 ![Loss Curve](std005_bias0_1/experiment_seed_65536/2025-06-03-16-59-18-End-2-end/epoch299/loss.png)
 
-![test_confusion_matrix_fig.png](std005_bias0_1/experiment_seed_65536/2025-06-03-16-59-18-End-2-end/epoch241/test_confusion_matrix_fig.png)
-![train_confusion_matrix_fig.png](std005_bias0_1/experiment_seed_65536/2025-06-03-16-59-18-End-2-end/epoch241/train_confusion_matrix_fig.png)
-![validate_confusion_matrix_fig.png](std005_bias0_1/experiment_seed_65536/2025-06-03-16-59-18-End-2-end/epoch241/validate_confusion_matrix_fig.png)
-
-![test_metrics_trends.png](std005_bias0_1/experiment_seed_65536/2025-06-03-16-59-18-End-2-end/test_metrics_trends.png)
-![train_metrics_trends.png](std005_bias0_1/experiment_seed_65536/2025-06-03-16-59-18-End-2-end/train_metrics_trends.png)
-![validate_metrics_trends.png](std005_bias0_1/experiment_seed_65536/2025-06-03-16-59-18-End-2-end/validate_metrics_trends.png)
-
+<p><img src="std005_bias0_1/experiment_seed_65536/2025-06-03-16-59-18-End-2-end/epoch241/test_confusion_matrix_fig.png" width="32%"/><img src="std005_bias0_1/experiment_seed_65536/2025-06-03-16-59-18-End-2-end/epoch241/train_confusion_matrix_fig.png" width="32%"/><img src="std005_bias0_1/experiment_seed_65536/2025-06-03-16-59-18-End-2-end/epoch241/validate_confusion_matrix_fig.png" width="32%"/></p>
+<p><img src="std005_bias0_1/experiment_seed_65536/2025-06-03-16-59-18-End-2-end/test_metrics_trends.png" width="32%"/><img src="std005_bias0_1/experiment_seed_65536/2025-06-03-16-59-18-End-2-end/train_metrics_trends.png" width="32%"/><img src="std005_bias0_1/experiment_seed_65536/2025-06-03-16-59-18-End-2-end/validate_metrics_trends.png" width="32%"/></p>
 ## Noise Condition: std0_bias0
 
 ### Seed: experiment_seed_114514
 
 #### Setup: sound-power
-
-**Hyperparameters:**
-- N_Classes: 50
-- AudioDuration: 5
-- AudioSampleRate: 44100
-- ResampleTo: 16000
-- WarmpUp: 10
-- MaxLossOfVisualization: 10
-- LearningRate: 0.001
-- WeightDecay: 5e-05
-- ReduceLROnPlateauMetricsName: validate_loss
-- SchedulerParameter: {'gamma': 0.001, 'milestones': [40, 80]}
-
-**Options:**
-- CacheSize: 2000
-- Device: None
-- TrainID: None
-- SaveDirectory: None
-- CompileModel: False
-- BASE_DIR: None
-- DataSetPath: None
-- TrainSetPath: None
-- TestSetPath: None
-- ValidatePath: None
 
 *Best Epoch*: 374
 
@@ -678,39 +204,9 @@
 
 ![Loss Curve](std0_bias0/experiment_seed_114514/2025-06-03-09-33-29-sound-power/epoch499/loss.png)
 
-![test_confusion_matrix_fig.png](std0_bias0/experiment_seed_114514/2025-06-03-09-33-29-sound-power/epoch374/test_confusion_matrix_fig.png)
-![train_confusion_matrix_fig.png](std0_bias0/experiment_seed_114514/2025-06-03-09-33-29-sound-power/epoch374/train_confusion_matrix_fig.png)
-![validate_confusion_matrix_fig.png](std0_bias0/experiment_seed_114514/2025-06-03-09-33-29-sound-power/epoch374/validate_confusion_matrix_fig.png)
-
-![test_metrics_trends.png](std0_bias0/experiment_seed_114514/2025-06-03-09-33-29-sound-power/test_metrics_trends.png)
-![train_metrics_trends.png](std0_bias0/experiment_seed_114514/2025-06-03-09-33-29-sound-power/train_metrics_trends.png)
-![validate_metrics_trends.png](std0_bias0/experiment_seed_114514/2025-06-03-09-33-29-sound-power/validate_metrics_trends.png)
-
+<p><img src="std0_bias0/experiment_seed_114514/2025-06-03-09-33-29-sound-power/epoch374/test_confusion_matrix_fig.png" width="32%"/><img src="std0_bias0/experiment_seed_114514/2025-06-03-09-33-29-sound-power/epoch374/train_confusion_matrix_fig.png" width="32%"/><img src="std0_bias0/experiment_seed_114514/2025-06-03-09-33-29-sound-power/epoch374/validate_confusion_matrix_fig.png" width="32%"/></p>
+<p><img src="std0_bias0/experiment_seed_114514/2025-06-03-09-33-29-sound-power/test_metrics_trends.png" width="32%"/><img src="std0_bias0/experiment_seed_114514/2025-06-03-09-33-29-sound-power/train_metrics_trends.png" width="32%"/><img src="std0_bias0/experiment_seed_114514/2025-06-03-09-33-29-sound-power/validate_metrics_trends.png" width="32%"/></p>
 #### Setup: air-propagate-latent
-
-**Hyperparameters:**
-- N_Classes: 50
-- AudioDuration: 5
-- WarmpUp: 10
-- MaxLossOfVisualization: 10
-- AudioSampleRate: 44100
-- LearningRate: 0.001
-- WeightDecay: 5e-05
-- ReduceLROnPlateauMetricsName: validate_loss
-- SchedulerParameter: {'gamma': 0.1, 'milestones': [40, 80]}
-- Epochs: None
-
-**Options:**
-- CacheSize: 2000
-- Device: None
-- TrainID: None
-- SaveDirectory: None
-- CompileModel: False
-- BASE_DIR: None
-- DataSetPath: None
-- TrainSetPath: None
-- TestSetPath: None
-- ValidatePath: None
 
 *Best Epoch*: 156
 
@@ -720,39 +216,9 @@
 
 ![Loss Curve](std0_bias0/experiment_seed_114514/2025-06-03-10-49-19-air-propagate-latent/epoch499/loss.png)
 
-![test_confusion_matrix_fig.png](std0_bias0/experiment_seed_114514/2025-06-03-10-49-19-air-propagate-latent/epoch156/test_confusion_matrix_fig.png)
-![train_confusion_matrix_fig.png](std0_bias0/experiment_seed_114514/2025-06-03-10-49-19-air-propagate-latent/epoch156/train_confusion_matrix_fig.png)
-![validate_confusion_matrix_fig.png](std0_bias0/experiment_seed_114514/2025-06-03-10-49-19-air-propagate-latent/epoch156/validate_confusion_matrix_fig.png)
-
-![test_metrics_trends.png](std0_bias0/experiment_seed_114514/2025-06-03-10-49-19-air-propagate-latent/test_metrics_trends.png)
-![train_metrics_trends.png](std0_bias0/experiment_seed_114514/2025-06-03-10-49-19-air-propagate-latent/train_metrics_trends.png)
-![validate_metrics_trends.png](std0_bias0/experiment_seed_114514/2025-06-03-10-49-19-air-propagate-latent/validate_metrics_trends.png)
-
+<p><img src="std0_bias0/experiment_seed_114514/2025-06-03-10-49-19-air-propagate-latent/epoch156/test_confusion_matrix_fig.png" width="32%"/><img src="std0_bias0/experiment_seed_114514/2025-06-03-10-49-19-air-propagate-latent/epoch156/train_confusion_matrix_fig.png" width="32%"/><img src="std0_bias0/experiment_seed_114514/2025-06-03-10-49-19-air-propagate-latent/epoch156/validate_confusion_matrix_fig.png" width="32%"/></p>
+<p><img src="std0_bias0/experiment_seed_114514/2025-06-03-10-49-19-air-propagate-latent/test_metrics_trends.png" width="32%"/><img src="std0_bias0/experiment_seed_114514/2025-06-03-10-49-19-air-propagate-latent/train_metrics_trends.png" width="32%"/><img src="std0_bias0/experiment_seed_114514/2025-06-03-10-49-19-air-propagate-latent/validate_metrics_trends.png" width="32%"/></p>
 #### Setup: End-2-end
-
-**Hyperparameters:**
-- N_Classes: 50
-- N_MIC: 5
-- AudioDuration: 5
-- WarmpUp: 10
-- MaxLossOfVisualization: 10
-- AudioSampleRate: 44100
-- LearningRate: 0.001
-- WeightDecay: 5e-05
-- ReduceLROnPlateauMetricsName: validate_loss
-- SchedulerParameter: {'gamma': 0.1, 'milestones': [40, 80]}
-
-**Options:**
-- CacheSize: 2000
-- Device: None
-- TrainID: None
-- SaveDirectory: None
-- CompileModel: False
-- BASE_DIR: None
-- DataSetPath: None
-- TrainSetPath: None
-- TestSetPath: None
-- ValidatePath: None
 
 *Best Epoch*: 252
 
@@ -762,41 +228,11 @@
 
 ![Loss Curve](std0_bias0/experiment_seed_114514/2025-06-03-11-51-55-End-2-end/epoch252/loss.png)
 
-![test_confusion_matrix_fig.png](std0_bias0/experiment_seed_114514/2025-06-03-11-51-55-End-2-end/epoch252/test_confusion_matrix_fig.png)
-![train_confusion_matrix_fig.png](std0_bias0/experiment_seed_114514/2025-06-03-11-51-55-End-2-end/epoch252/train_confusion_matrix_fig.png)
-![validate_confusion_matrix_fig.png](std0_bias0/experiment_seed_114514/2025-06-03-11-51-55-End-2-end/epoch252/validate_confusion_matrix_fig.png)
-
-![test_metrics_trends.png](std0_bias0/experiment_seed_114514/2025-06-03-11-51-55-End-2-end/test_metrics_trends.png)
-![train_metrics_trends.png](std0_bias0/experiment_seed_114514/2025-06-03-11-51-55-End-2-end/train_metrics_trends.png)
-![validate_metrics_trends.png](std0_bias0/experiment_seed_114514/2025-06-03-11-51-55-End-2-end/validate_metrics_trends.png)
-
+<p><img src="std0_bias0/experiment_seed_114514/2025-06-03-11-51-55-End-2-end/epoch252/test_confusion_matrix_fig.png" width="32%"/><img src="std0_bias0/experiment_seed_114514/2025-06-03-11-51-55-End-2-end/epoch252/train_confusion_matrix_fig.png" width="32%"/><img src="std0_bias0/experiment_seed_114514/2025-06-03-11-51-55-End-2-end/epoch252/validate_confusion_matrix_fig.png" width="32%"/></p>
+<p><img src="std0_bias0/experiment_seed_114514/2025-06-03-11-51-55-End-2-end/test_metrics_trends.png" width="32%"/><img src="std0_bias0/experiment_seed_114514/2025-06-03-11-51-55-End-2-end/train_metrics_trends.png" width="32%"/><img src="std0_bias0/experiment_seed_114514/2025-06-03-11-51-55-End-2-end/validate_metrics_trends.png" width="32%"/></p>
 ### Seed: experiment_seed_3047
 
 #### Setup: sound-power
-
-**Hyperparameters:**
-- N_Classes: 50
-- AudioDuration: 5
-- AudioSampleRate: 44100
-- ResampleTo: 16000
-- WarmpUp: 10
-- MaxLossOfVisualization: 10
-- LearningRate: 0.001
-- WeightDecay: 5e-05
-- ReduceLROnPlateauMetricsName: validate_loss
-- SchedulerParameter: {'gamma': 0.001, 'milestones': [40, 80]}
-
-**Options:**
-- CacheSize: 2000
-- Device: None
-- TrainID: None
-- SaveDirectory: None
-- CompileModel: False
-- BASE_DIR: None
-- DataSetPath: None
-- TrainSetPath: None
-- TestSetPath: None
-- ValidatePath: None
 
 *Best Epoch*: 407
 
@@ -806,39 +242,9 @@
 
 ![Loss Curve](std0_bias0/experiment_seed_3047/2025-06-03-02-44-17-sound-power/epoch499/loss.png)
 
-![test_confusion_matrix_fig.png](std0_bias0/experiment_seed_3047/2025-06-03-02-44-17-sound-power/epoch407/test_confusion_matrix_fig.png)
-![train_confusion_matrix_fig.png](std0_bias0/experiment_seed_3047/2025-06-03-02-44-17-sound-power/epoch407/train_confusion_matrix_fig.png)
-![validate_confusion_matrix_fig.png](std0_bias0/experiment_seed_3047/2025-06-03-02-44-17-sound-power/epoch407/validate_confusion_matrix_fig.png)
-
-![test_metrics_trends.png](std0_bias0/experiment_seed_3047/2025-06-03-02-44-17-sound-power/test_metrics_trends.png)
-![train_metrics_trends.png](std0_bias0/experiment_seed_3047/2025-06-03-02-44-17-sound-power/train_metrics_trends.png)
-![validate_metrics_trends.png](std0_bias0/experiment_seed_3047/2025-06-03-02-44-17-sound-power/validate_metrics_trends.png)
-
+<p><img src="std0_bias0/experiment_seed_3047/2025-06-03-02-44-17-sound-power/epoch407/test_confusion_matrix_fig.png" width="32%"/><img src="std0_bias0/experiment_seed_3047/2025-06-03-02-44-17-sound-power/epoch407/train_confusion_matrix_fig.png" width="32%"/><img src="std0_bias0/experiment_seed_3047/2025-06-03-02-44-17-sound-power/epoch407/validate_confusion_matrix_fig.png" width="32%"/></p>
+<p><img src="std0_bias0/experiment_seed_3047/2025-06-03-02-44-17-sound-power/test_metrics_trends.png" width="32%"/><img src="std0_bias0/experiment_seed_3047/2025-06-03-02-44-17-sound-power/train_metrics_trends.png" width="32%"/><img src="std0_bias0/experiment_seed_3047/2025-06-03-02-44-17-sound-power/validate_metrics_trends.png" width="32%"/></p>
 #### Setup: air-propagate-latent
-
-**Hyperparameters:**
-- N_Classes: 50
-- AudioDuration: 5
-- WarmpUp: 10
-- MaxLossOfVisualization: 10
-- AudioSampleRate: 44100
-- LearningRate: 0.001
-- WeightDecay: 5e-05
-- ReduceLROnPlateauMetricsName: validate_loss
-- SchedulerParameter: {'gamma': 0.1, 'milestones': [40, 80]}
-- Epochs: None
-
-**Options:**
-- CacheSize: 2000
-- Device: None
-- TrainID: None
-- SaveDirectory: None
-- CompileModel: False
-- BASE_DIR: None
-- DataSetPath: None
-- TrainSetPath: None
-- TestSetPath: None
-- ValidatePath: None
 
 *Best Epoch*: 142
 
@@ -848,39 +254,9 @@
 
 ![Loss Curve](std0_bias0/experiment_seed_3047/2025-06-03-03-55-27-air-propagate-latent/epoch499/loss.png)
 
-![test_confusion_matrix_fig.png](std0_bias0/experiment_seed_3047/2025-06-03-03-55-27-air-propagate-latent/epoch142/test_confusion_matrix_fig.png)
-![train_confusion_matrix_fig.png](std0_bias0/experiment_seed_3047/2025-06-03-03-55-27-air-propagate-latent/epoch142/train_confusion_matrix_fig.png)
-![validate_confusion_matrix_fig.png](std0_bias0/experiment_seed_3047/2025-06-03-03-55-27-air-propagate-latent/epoch142/validate_confusion_matrix_fig.png)
-
-![test_metrics_trends.png](std0_bias0/experiment_seed_3047/2025-06-03-03-55-27-air-propagate-latent/test_metrics_trends.png)
-![train_metrics_trends.png](std0_bias0/experiment_seed_3047/2025-06-03-03-55-27-air-propagate-latent/train_metrics_trends.png)
-![validate_metrics_trends.png](std0_bias0/experiment_seed_3047/2025-06-03-03-55-27-air-propagate-latent/validate_metrics_trends.png)
-
+<p><img src="std0_bias0/experiment_seed_3047/2025-06-03-03-55-27-air-propagate-latent/epoch142/test_confusion_matrix_fig.png" width="32%"/><img src="std0_bias0/experiment_seed_3047/2025-06-03-03-55-27-air-propagate-latent/epoch142/train_confusion_matrix_fig.png" width="32%"/><img src="std0_bias0/experiment_seed_3047/2025-06-03-03-55-27-air-propagate-latent/epoch142/validate_confusion_matrix_fig.png" width="32%"/></p>
+<p><img src="std0_bias0/experiment_seed_3047/2025-06-03-03-55-27-air-propagate-latent/test_metrics_trends.png" width="32%"/><img src="std0_bias0/experiment_seed_3047/2025-06-03-03-55-27-air-propagate-latent/train_metrics_trends.png" width="32%"/><img src="std0_bias0/experiment_seed_3047/2025-06-03-03-55-27-air-propagate-latent/validate_metrics_trends.png" width="32%"/></p>
 #### Setup: End-2-end
-
-**Hyperparameters:**
-- N_Classes: 50
-- N_MIC: 5
-- AudioDuration: 5
-- WarmpUp: 10
-- MaxLossOfVisualization: 10
-- AudioSampleRate: 44100
-- LearningRate: 0.001
-- WeightDecay: 5e-05
-- ReduceLROnPlateauMetricsName: validate_loss
-- SchedulerParameter: {'gamma': 0.1, 'milestones': [40, 80]}
-
-**Options:**
-- CacheSize: 2000
-- Device: cpu
-- TrainID: None
-- SaveDirectory: None
-- CompileModel: False
-- BASE_DIR: None
-- DataSetPath: None
-- TrainSetPath: None
-- TestSetPath: None
-- ValidatePath: None
 
 *Best Epoch*: 233
 
@@ -890,41 +266,11 @@
 
 ![Loss Curve](std0_bias0/experiment_seed_3047/2025-06-03-04-58-31-End-2-end/epoch499/loss.png)
 
-![test_confusion_matrix_fig.png](std0_bias0/experiment_seed_3047/2025-06-03-04-58-31-End-2-end/epoch233/test_confusion_matrix_fig.png)
-![train_confusion_matrix_fig.png](std0_bias0/experiment_seed_3047/2025-06-03-04-58-31-End-2-end/epoch233/train_confusion_matrix_fig.png)
-![validate_confusion_matrix_fig.png](std0_bias0/experiment_seed_3047/2025-06-03-04-58-31-End-2-end/epoch233/validate_confusion_matrix_fig.png)
-
-![test_metrics_trends.png](std0_bias0/experiment_seed_3047/2025-06-03-04-58-31-End-2-end/test_metrics_trends.png)
-![train_metrics_trends.png](std0_bias0/experiment_seed_3047/2025-06-03-04-58-31-End-2-end/train_metrics_trends.png)
-![validate_metrics_trends.png](std0_bias0/experiment_seed_3047/2025-06-03-04-58-31-End-2-end/validate_metrics_trends.png)
-
+<p><img src="std0_bias0/experiment_seed_3047/2025-06-03-04-58-31-End-2-end/epoch233/test_confusion_matrix_fig.png" width="32%"/><img src="std0_bias0/experiment_seed_3047/2025-06-03-04-58-31-End-2-end/epoch233/train_confusion_matrix_fig.png" width="32%"/><img src="std0_bias0/experiment_seed_3047/2025-06-03-04-58-31-End-2-end/epoch233/validate_confusion_matrix_fig.png" width="32%"/></p>
+<p><img src="std0_bias0/experiment_seed_3047/2025-06-03-04-58-31-End-2-end/test_metrics_trends.png" width="32%"/><img src="std0_bias0/experiment_seed_3047/2025-06-03-04-58-31-End-2-end/train_metrics_trends.png" width="32%"/><img src="std0_bias0/experiment_seed_3047/2025-06-03-04-58-31-End-2-end/validate_metrics_trends.png" width="32%"/></p>
 ### Seed: experiment_seed_4999
 
 #### Setup: sound-power
-
-**Hyperparameters:**
-- N_Classes: 50
-- AudioDuration: 5
-- AudioSampleRate: 44100
-- ResampleTo: 16000
-- WarmpUp: 10
-- MaxLossOfVisualization: 10
-- LearningRate: 0.001
-- WeightDecay: 5e-05
-- ReduceLROnPlateauMetricsName: validate_loss
-- SchedulerParameter: {'gamma': 0.001, 'milestones': [40, 80]}
-
-**Options:**
-- CacheSize: 2000
-- Device: None
-- TrainID: None
-- SaveDirectory: None
-- CompileModel: False
-- BASE_DIR: None
-- DataSetPath: None
-- TrainSetPath: None
-- TestSetPath: None
-- ValidatePath: None
 
 *Best Epoch*: 140
 
@@ -934,39 +280,9 @@
 
 ![Loss Curve](std0_bias0/experiment_seed_4999/2025-06-03-15-34-06-sound-power/epoch499/loss.png)
 
-![test_confusion_matrix_fig.png](std0_bias0/experiment_seed_4999/2025-06-03-15-34-06-sound-power/epoch140/test_confusion_matrix_fig.png)
-![train_confusion_matrix_fig.png](std0_bias0/experiment_seed_4999/2025-06-03-15-34-06-sound-power/epoch140/train_confusion_matrix_fig.png)
-![validate_confusion_matrix_fig.png](std0_bias0/experiment_seed_4999/2025-06-03-15-34-06-sound-power/epoch140/validate_confusion_matrix_fig.png)
-
-![test_metrics_trends.png](std0_bias0/experiment_seed_4999/2025-06-03-15-34-06-sound-power/test_metrics_trends.png)
-![train_metrics_trends.png](std0_bias0/experiment_seed_4999/2025-06-03-15-34-06-sound-power/train_metrics_trends.png)
-![validate_metrics_trends.png](std0_bias0/experiment_seed_4999/2025-06-03-15-34-06-sound-power/validate_metrics_trends.png)
-
+<p><img src="std0_bias0/experiment_seed_4999/2025-06-03-15-34-06-sound-power/epoch140/test_confusion_matrix_fig.png" width="32%"/><img src="std0_bias0/experiment_seed_4999/2025-06-03-15-34-06-sound-power/epoch140/train_confusion_matrix_fig.png" width="32%"/><img src="std0_bias0/experiment_seed_4999/2025-06-03-15-34-06-sound-power/epoch140/validate_confusion_matrix_fig.png" width="32%"/></p>
+<p><img src="std0_bias0/experiment_seed_4999/2025-06-03-15-34-06-sound-power/test_metrics_trends.png" width="32%"/><img src="std0_bias0/experiment_seed_4999/2025-06-03-15-34-06-sound-power/train_metrics_trends.png" width="32%"/><img src="std0_bias0/experiment_seed_4999/2025-06-03-15-34-06-sound-power/validate_metrics_trends.png" width="32%"/></p>
 #### Setup: air-propagate-latent
-
-**Hyperparameters:**
-- N_Classes: 50
-- AudioDuration: 5
-- WarmpUp: 10
-- MaxLossOfVisualization: 10
-- AudioSampleRate: 44100
-- LearningRate: 0.001
-- WeightDecay: 5e-05
-- ReduceLROnPlateauMetricsName: validate_loss
-- SchedulerParameter: {'gamma': 0.1, 'milestones': [40, 80]}
-- Epochs: None
-
-**Options:**
-- CacheSize: 2000
-- Device: None
-- TrainID: None
-- SaveDirectory: None
-- CompileModel: False
-- BASE_DIR: None
-- DataSetPath: None
-- TrainSetPath: None
-- TestSetPath: None
-- ValidatePath: None
 
 *Best Epoch*: 142
 
@@ -976,39 +292,9 @@
 
 ![Loss Curve](std0_bias0/experiment_seed_4999/2025-06-03-16-50-45-air-propagate-latent/epoch499/loss.png)
 
-![test_confusion_matrix_fig.png](std0_bias0/experiment_seed_4999/2025-06-03-16-50-45-air-propagate-latent/epoch142/test_confusion_matrix_fig.png)
-![train_confusion_matrix_fig.png](std0_bias0/experiment_seed_4999/2025-06-03-16-50-45-air-propagate-latent/epoch142/train_confusion_matrix_fig.png)
-![validate_confusion_matrix_fig.png](std0_bias0/experiment_seed_4999/2025-06-03-16-50-45-air-propagate-latent/epoch142/validate_confusion_matrix_fig.png)
-
-![test_metrics_trends.png](std0_bias0/experiment_seed_4999/2025-06-03-16-50-45-air-propagate-latent/test_metrics_trends.png)
-![train_metrics_trends.png](std0_bias0/experiment_seed_4999/2025-06-03-16-50-45-air-propagate-latent/train_metrics_trends.png)
-![validate_metrics_trends.png](std0_bias0/experiment_seed_4999/2025-06-03-16-50-45-air-propagate-latent/validate_metrics_trends.png)
-
+<p><img src="std0_bias0/experiment_seed_4999/2025-06-03-16-50-45-air-propagate-latent/epoch142/test_confusion_matrix_fig.png" width="32%"/><img src="std0_bias0/experiment_seed_4999/2025-06-03-16-50-45-air-propagate-latent/epoch142/train_confusion_matrix_fig.png" width="32%"/><img src="std0_bias0/experiment_seed_4999/2025-06-03-16-50-45-air-propagate-latent/epoch142/validate_confusion_matrix_fig.png" width="32%"/></p>
+<p><img src="std0_bias0/experiment_seed_4999/2025-06-03-16-50-45-air-propagate-latent/test_metrics_trends.png" width="32%"/><img src="std0_bias0/experiment_seed_4999/2025-06-03-16-50-45-air-propagate-latent/train_metrics_trends.png" width="32%"/><img src="std0_bias0/experiment_seed_4999/2025-06-03-16-50-45-air-propagate-latent/validate_metrics_trends.png" width="32%"/></p>
 #### Setup: End-2-end
-
-**Hyperparameters:**
-- N_Classes: 50
-- N_MIC: 5
-- AudioDuration: 5
-- WarmpUp: 10
-- MaxLossOfVisualization: 10
-- AudioSampleRate: 44100
-- LearningRate: 0.001
-- WeightDecay: 5e-05
-- ReduceLROnPlateauMetricsName: validate_loss
-- SchedulerParameter: {'gamma': 0.1, 'milestones': [40, 80]}
-
-**Options:**
-- CacheSize: 2000
-- Device: None
-- TrainID: None
-- SaveDirectory: None
-- CompileModel: False
-- BASE_DIR: None
-- DataSetPath: None
-- TrainSetPath: None
-- TestSetPath: None
-- ValidatePath: None
 
 *Best Epoch*: 81
 
@@ -1018,41 +304,11 @@
 
 ![Loss Curve](std0_bias0/experiment_seed_4999/2025-06-03-17-55-20-End-2-end/epoch299/loss.png)
 
-![test_confusion_matrix_fig.png](std0_bias0/experiment_seed_4999/2025-06-03-17-55-20-End-2-end/epoch81/test_confusion_matrix_fig.png)
-![train_confusion_matrix_fig.png](std0_bias0/experiment_seed_4999/2025-06-03-17-55-20-End-2-end/epoch81/train_confusion_matrix_fig.png)
-![validate_confusion_matrix_fig.png](std0_bias0/experiment_seed_4999/2025-06-03-17-55-20-End-2-end/epoch81/validate_confusion_matrix_fig.png)
-
-![test_metrics_trends.png](std0_bias0/experiment_seed_4999/2025-06-03-17-55-20-End-2-end/test_metrics_trends.png)
-![train_metrics_trends.png](std0_bias0/experiment_seed_4999/2025-06-03-17-55-20-End-2-end/train_metrics_trends.png)
-![validate_metrics_trends.png](std0_bias0/experiment_seed_4999/2025-06-03-17-55-20-End-2-end/validate_metrics_trends.png)
-
+<p><img src="std0_bias0/experiment_seed_4999/2025-06-03-17-55-20-End-2-end/epoch81/test_confusion_matrix_fig.png" width="32%"/><img src="std0_bias0/experiment_seed_4999/2025-06-03-17-55-20-End-2-end/epoch81/train_confusion_matrix_fig.png" width="32%"/><img src="std0_bias0/experiment_seed_4999/2025-06-03-17-55-20-End-2-end/epoch81/validate_confusion_matrix_fig.png" width="32%"/></p>
+<p><img src="std0_bias0/experiment_seed_4999/2025-06-03-17-55-20-End-2-end/test_metrics_trends.png" width="32%"/><img src="std0_bias0/experiment_seed_4999/2025-06-03-17-55-20-End-2-end/train_metrics_trends.png" width="32%"/><img src="std0_bias0/experiment_seed_4999/2025-06-03-17-55-20-End-2-end/validate_metrics_trends.png" width="32%"/></p>
 ### Seed: experiment_seed_65536
 
 #### Setup: sound-power
-
-**Hyperparameters:**
-- N_Classes: 50
-- AudioDuration: 5
-- AudioSampleRate: 44100
-- ResampleTo: 16000
-- WarmpUp: 10
-- MaxLossOfVisualization: 10
-- LearningRate: 0.001
-- WeightDecay: 5e-05
-- ReduceLROnPlateauMetricsName: validate_loss
-- SchedulerParameter: {'gamma': 0.001, 'milestones': [40, 80]}
-
-**Options:**
-- CacheSize: 2000
-- Device: None
-- TrainID: None
-- SaveDirectory: None
-- CompileModel: False
-- BASE_DIR: None
-- DataSetPath: None
-- TrainSetPath: None
-- TestSetPath: None
-- ValidatePath: None
 
 *Best Epoch*: 230
 
@@ -1062,39 +318,9 @@
 
 ![Loss Curve](std0_bias0/experiment_seed_65536/2025-06-03-12-28-13-sound-power/epoch499/loss.png)
 
-![test_confusion_matrix_fig.png](std0_bias0/experiment_seed_65536/2025-06-03-12-28-13-sound-power/epoch230/test_confusion_matrix_fig.png)
-![train_confusion_matrix_fig.png](std0_bias0/experiment_seed_65536/2025-06-03-12-28-13-sound-power/epoch230/train_confusion_matrix_fig.png)
-![validate_confusion_matrix_fig.png](std0_bias0/experiment_seed_65536/2025-06-03-12-28-13-sound-power/epoch230/validate_confusion_matrix_fig.png)
-
-![test_metrics_trends.png](std0_bias0/experiment_seed_65536/2025-06-03-12-28-13-sound-power/test_metrics_trends.png)
-![train_metrics_trends.png](std0_bias0/experiment_seed_65536/2025-06-03-12-28-13-sound-power/train_metrics_trends.png)
-![validate_metrics_trends.png](std0_bias0/experiment_seed_65536/2025-06-03-12-28-13-sound-power/validate_metrics_trends.png)
-
+<p><img src="std0_bias0/experiment_seed_65536/2025-06-03-12-28-13-sound-power/epoch230/test_confusion_matrix_fig.png" width="32%"/><img src="std0_bias0/experiment_seed_65536/2025-06-03-12-28-13-sound-power/epoch230/train_confusion_matrix_fig.png" width="32%"/><img src="std0_bias0/experiment_seed_65536/2025-06-03-12-28-13-sound-power/epoch230/validate_confusion_matrix_fig.png" width="32%"/></p>
+<p><img src="std0_bias0/experiment_seed_65536/2025-06-03-12-28-13-sound-power/test_metrics_trends.png" width="32%"/><img src="std0_bias0/experiment_seed_65536/2025-06-03-12-28-13-sound-power/train_metrics_trends.png" width="32%"/><img src="std0_bias0/experiment_seed_65536/2025-06-03-12-28-13-sound-power/validate_metrics_trends.png" width="32%"/></p>
 #### Setup: air-propagate-latent
-
-**Hyperparameters:**
-- N_Classes: 50
-- AudioDuration: 5
-- WarmpUp: 10
-- MaxLossOfVisualization: 10
-- AudioSampleRate: 44100
-- LearningRate: 0.001
-- WeightDecay: 5e-05
-- ReduceLROnPlateauMetricsName: validate_loss
-- SchedulerParameter: {'gamma': 0.1, 'milestones': [40, 80]}
-- Epochs: None
-
-**Options:**
-- CacheSize: 2000
-- Device: None
-- TrainID: None
-- SaveDirectory: None
-- CompileModel: False
-- BASE_DIR: None
-- DataSetPath: None
-- TrainSetPath: None
-- TestSetPath: None
-- ValidatePath: None
 
 *Best Epoch*: 186
 
@@ -1104,39 +330,9 @@
 
 ![Loss Curve](std0_bias0/experiment_seed_65536/2025-06-03-13-49-58-air-propagate-latent/epoch499/loss.png)
 
-![test_confusion_matrix_fig.png](std0_bias0/experiment_seed_65536/2025-06-03-13-49-58-air-propagate-latent/epoch186/test_confusion_matrix_fig.png)
-![train_confusion_matrix_fig.png](std0_bias0/experiment_seed_65536/2025-06-03-13-49-58-air-propagate-latent/epoch186/train_confusion_matrix_fig.png)
-![validate_confusion_matrix_fig.png](std0_bias0/experiment_seed_65536/2025-06-03-13-49-58-air-propagate-latent/epoch186/validate_confusion_matrix_fig.png)
-
-![test_metrics_trends.png](std0_bias0/experiment_seed_65536/2025-06-03-13-49-58-air-propagate-latent/test_metrics_trends.png)
-![train_metrics_trends.png](std0_bias0/experiment_seed_65536/2025-06-03-13-49-58-air-propagate-latent/train_metrics_trends.png)
-![validate_metrics_trends.png](std0_bias0/experiment_seed_65536/2025-06-03-13-49-58-air-propagate-latent/validate_metrics_trends.png)
-
+<p><img src="std0_bias0/experiment_seed_65536/2025-06-03-13-49-58-air-propagate-latent/epoch186/test_confusion_matrix_fig.png" width="32%"/><img src="std0_bias0/experiment_seed_65536/2025-06-03-13-49-58-air-propagate-latent/epoch186/train_confusion_matrix_fig.png" width="32%"/><img src="std0_bias0/experiment_seed_65536/2025-06-03-13-49-58-air-propagate-latent/epoch186/validate_confusion_matrix_fig.png" width="32%"/></p>
+<p><img src="std0_bias0/experiment_seed_65536/2025-06-03-13-49-58-air-propagate-latent/test_metrics_trends.png" width="32%"/><img src="std0_bias0/experiment_seed_65536/2025-06-03-13-49-58-air-propagate-latent/train_metrics_trends.png" width="32%"/><img src="std0_bias0/experiment_seed_65536/2025-06-03-13-49-58-air-propagate-latent/validate_metrics_trends.png" width="32%"/></p>
 #### Setup: End-2-end
-
-**Hyperparameters:**
-- N_Classes: 50
-- N_MIC: 5
-- AudioDuration: 5
-- WarmpUp: 10
-- MaxLossOfVisualization: 10
-- AudioSampleRate: 44100
-- LearningRate: 0.001
-- WeightDecay: 5e-05
-- ReduceLROnPlateauMetricsName: validate_loss
-- SchedulerParameter: {'gamma': 0.1, 'milestones': [40, 80]}
-
-**Options:**
-- CacheSize: 2000
-- Device: None
-- TrainID: None
-- SaveDirectory: None
-- CompileModel: False
-- BASE_DIR: None
-- DataSetPath: None
-- TrainSetPath: None
-- TestSetPath: None
-- ValidatePath: None
 
 *Best Epoch*: 278
 
@@ -1146,43 +342,13 @@
 
 ![Loss Curve](std0_bias0/experiment_seed_65536/2025-06-03-14-54-40-End-2-end/epoch299/loss.png)
 
-![test_confusion_matrix_fig.png](std0_bias0/experiment_seed_65536/2025-06-03-14-54-40-End-2-end/epoch278/test_confusion_matrix_fig.png)
-![train_confusion_matrix_fig.png](std0_bias0/experiment_seed_65536/2025-06-03-14-54-40-End-2-end/epoch278/train_confusion_matrix_fig.png)
-![validate_confusion_matrix_fig.png](std0_bias0/experiment_seed_65536/2025-06-03-14-54-40-End-2-end/epoch278/validate_confusion_matrix_fig.png)
-
-![test_metrics_trends.png](std0_bias0/experiment_seed_65536/2025-06-03-14-54-40-End-2-end/test_metrics_trends.png)
-![train_metrics_trends.png](std0_bias0/experiment_seed_65536/2025-06-03-14-54-40-End-2-end/train_metrics_trends.png)
-![validate_metrics_trends.png](std0_bias0/experiment_seed_65536/2025-06-03-14-54-40-End-2-end/validate_metrics_trends.png)
-
+<p><img src="std0_bias0/experiment_seed_65536/2025-06-03-14-54-40-End-2-end/epoch278/test_confusion_matrix_fig.png" width="32%"/><img src="std0_bias0/experiment_seed_65536/2025-06-03-14-54-40-End-2-end/epoch278/train_confusion_matrix_fig.png" width="32%"/><img src="std0_bias0/experiment_seed_65536/2025-06-03-14-54-40-End-2-end/epoch278/validate_confusion_matrix_fig.png" width="32%"/></p>
+<p><img src="std0_bias0/experiment_seed_65536/2025-06-03-14-54-40-End-2-end/test_metrics_trends.png" width="32%"/><img src="std0_bias0/experiment_seed_65536/2025-06-03-14-54-40-End-2-end/train_metrics_trends.png" width="32%"/><img src="std0_bias0/experiment_seed_65536/2025-06-03-14-54-40-End-2-end/validate_metrics_trends.png" width="32%"/></p>
 ## Noise Condition: std0_bias0_1
 
 ### Seed: experiment_seed_114514
 
 #### Setup: sound-power
-
-**Hyperparameters:**
-- N_Classes: 50
-- AudioDuration: 5
-- AudioSampleRate: 44100
-- ResampleTo: 16000
-- WarmpUp: 10
-- MaxLossOfVisualization: 10
-- LearningRate: 0.001
-- WeightDecay: 5e-05
-- ReduceLROnPlateauMetricsName: validate_loss
-- SchedulerParameter: {'gamma': 0.001, 'milestones': [40, 80]}
-
-**Options:**
-- CacheSize: 2000
-- Device: None
-- TrainID: None
-- SaveDirectory: None
-- CompileModel: False
-- BASE_DIR: None
-- DataSetPath: None
-- TrainSetPath: None
-- TestSetPath: None
-- ValidatePath: None
 
 *Best Epoch*: 324
 
@@ -1192,39 +358,9 @@
 
 ![Loss Curve](std0_bias0_1/experiment_seed_114514/2025-06-04-03-53-55-sound-power/epoch499/loss.png)
 
-![test_confusion_matrix_fig.png](std0_bias0_1/experiment_seed_114514/2025-06-04-03-53-55-sound-power/epoch324/test_confusion_matrix_fig.png)
-![train_confusion_matrix_fig.png](std0_bias0_1/experiment_seed_114514/2025-06-04-03-53-55-sound-power/epoch324/train_confusion_matrix_fig.png)
-![validate_confusion_matrix_fig.png](std0_bias0_1/experiment_seed_114514/2025-06-04-03-53-55-sound-power/epoch324/validate_confusion_matrix_fig.png)
-
-![test_metrics_trends.png](std0_bias0_1/experiment_seed_114514/2025-06-04-03-53-55-sound-power/test_metrics_trends.png)
-![train_metrics_trends.png](std0_bias0_1/experiment_seed_114514/2025-06-04-03-53-55-sound-power/train_metrics_trends.png)
-![validate_metrics_trends.png](std0_bias0_1/experiment_seed_114514/2025-06-04-03-53-55-sound-power/validate_metrics_trends.png)
-
+<p><img src="std0_bias0_1/experiment_seed_114514/2025-06-04-03-53-55-sound-power/epoch324/test_confusion_matrix_fig.png" width="32%"/><img src="std0_bias0_1/experiment_seed_114514/2025-06-04-03-53-55-sound-power/epoch324/train_confusion_matrix_fig.png" width="32%"/><img src="std0_bias0_1/experiment_seed_114514/2025-06-04-03-53-55-sound-power/epoch324/validate_confusion_matrix_fig.png" width="32%"/></p>
+<p><img src="std0_bias0_1/experiment_seed_114514/2025-06-04-03-53-55-sound-power/test_metrics_trends.png" width="32%"/><img src="std0_bias0_1/experiment_seed_114514/2025-06-04-03-53-55-sound-power/train_metrics_trends.png" width="32%"/><img src="std0_bias0_1/experiment_seed_114514/2025-06-04-03-53-55-sound-power/validate_metrics_trends.png" width="32%"/></p>
 #### Setup: air-propagate-latent
-
-**Hyperparameters:**
-- N_Classes: 50
-- AudioDuration: 5
-- WarmpUp: 10
-- MaxLossOfVisualization: 10
-- AudioSampleRate: 44100
-- LearningRate: 0.001
-- WeightDecay: 5e-05
-- ReduceLROnPlateauMetricsName: validate_loss
-- SchedulerParameter: {'gamma': 0.1, 'milestones': [40, 80]}
-- Epochs: None
-
-**Options:**
-- CacheSize: 2000
-- Device: None
-- TrainID: None
-- SaveDirectory: None
-- CompileModel: False
-- BASE_DIR: None
-- DataSetPath: None
-- TrainSetPath: None
-- TestSetPath: None
-- ValidatePath: None
 
 *Best Epoch*: 126
 
@@ -1234,39 +370,9 @@
 
 ![Loss Curve](std0_bias0_1/experiment_seed_114514/2025-06-04-05-03-10-air-propagate-latent/epoch499/loss.png)
 
-![test_confusion_matrix_fig.png](std0_bias0_1/experiment_seed_114514/2025-06-04-05-03-10-air-propagate-latent/epoch126/test_confusion_matrix_fig.png)
-![train_confusion_matrix_fig.png](std0_bias0_1/experiment_seed_114514/2025-06-04-05-03-10-air-propagate-latent/epoch126/train_confusion_matrix_fig.png)
-![validate_confusion_matrix_fig.png](std0_bias0_1/experiment_seed_114514/2025-06-04-05-03-10-air-propagate-latent/epoch126/validate_confusion_matrix_fig.png)
-
-![test_metrics_trends.png](std0_bias0_1/experiment_seed_114514/2025-06-04-05-03-10-air-propagate-latent/test_metrics_trends.png)
-![train_metrics_trends.png](std0_bias0_1/experiment_seed_114514/2025-06-04-05-03-10-air-propagate-latent/train_metrics_trends.png)
-![validate_metrics_trends.png](std0_bias0_1/experiment_seed_114514/2025-06-04-05-03-10-air-propagate-latent/validate_metrics_trends.png)
-
+<p><img src="std0_bias0_1/experiment_seed_114514/2025-06-04-05-03-10-air-propagate-latent/epoch126/test_confusion_matrix_fig.png" width="32%"/><img src="std0_bias0_1/experiment_seed_114514/2025-06-04-05-03-10-air-propagate-latent/epoch126/train_confusion_matrix_fig.png" width="32%"/><img src="std0_bias0_1/experiment_seed_114514/2025-06-04-05-03-10-air-propagate-latent/epoch126/validate_confusion_matrix_fig.png" width="32%"/></p>
+<p><img src="std0_bias0_1/experiment_seed_114514/2025-06-04-05-03-10-air-propagate-latent/test_metrics_trends.png" width="32%"/><img src="std0_bias0_1/experiment_seed_114514/2025-06-04-05-03-10-air-propagate-latent/train_metrics_trends.png" width="32%"/><img src="std0_bias0_1/experiment_seed_114514/2025-06-04-05-03-10-air-propagate-latent/validate_metrics_trends.png" width="32%"/></p>
 #### Setup: End-2-end
-
-**Hyperparameters:**
-- N_Classes: 50
-- N_MIC: 5
-- AudioDuration: 5
-- WarmpUp: 10
-- MaxLossOfVisualization: 10
-- AudioSampleRate: 44100
-- LearningRate: 0.001
-- WeightDecay: 5e-05
-- ReduceLROnPlateauMetricsName: validate_loss
-- SchedulerParameter: {'gamma': 0.1, 'milestones': [40, 80]}
-
-**Options:**
-- CacheSize: 2000
-- Device: None
-- TrainID: None
-- SaveDirectory: None
-- CompileModel: False
-- BASE_DIR: None
-- DataSetPath: None
-- TrainSetPath: None
-- TestSetPath: None
-- ValidatePath: None
 
 *Best Epoch*: 272
 
@@ -1276,41 +382,11 @@
 
 ![Loss Curve](std0_bias0_1/experiment_seed_114514/2025-06-04-05-54-35-End-2-end/epoch299/loss.png)
 
-![test_confusion_matrix_fig.png](std0_bias0_1/experiment_seed_114514/2025-06-04-05-54-35-End-2-end/epoch272/test_confusion_matrix_fig.png)
-![train_confusion_matrix_fig.png](std0_bias0_1/experiment_seed_114514/2025-06-04-05-54-35-End-2-end/epoch272/train_confusion_matrix_fig.png)
-![validate_confusion_matrix_fig.png](std0_bias0_1/experiment_seed_114514/2025-06-04-05-54-35-End-2-end/epoch272/validate_confusion_matrix_fig.png)
-
-![test_metrics_trends.png](std0_bias0_1/experiment_seed_114514/2025-06-04-05-54-35-End-2-end/test_metrics_trends.png)
-![train_metrics_trends.png](std0_bias0_1/experiment_seed_114514/2025-06-04-05-54-35-End-2-end/train_metrics_trends.png)
-![validate_metrics_trends.png](std0_bias0_1/experiment_seed_114514/2025-06-04-05-54-35-End-2-end/validate_metrics_trends.png)
-
+<p><img src="std0_bias0_1/experiment_seed_114514/2025-06-04-05-54-35-End-2-end/epoch272/test_confusion_matrix_fig.png" width="32%"/><img src="std0_bias0_1/experiment_seed_114514/2025-06-04-05-54-35-End-2-end/epoch272/train_confusion_matrix_fig.png" width="32%"/><img src="std0_bias0_1/experiment_seed_114514/2025-06-04-05-54-35-End-2-end/epoch272/validate_confusion_matrix_fig.png" width="32%"/></p>
+<p><img src="std0_bias0_1/experiment_seed_114514/2025-06-04-05-54-35-End-2-end/test_metrics_trends.png" width="32%"/><img src="std0_bias0_1/experiment_seed_114514/2025-06-04-05-54-35-End-2-end/train_metrics_trends.png" width="32%"/><img src="std0_bias0_1/experiment_seed_114514/2025-06-04-05-54-35-End-2-end/validate_metrics_trends.png" width="32%"/></p>
 ### Seed: experiment_seed_3047
 
 #### Setup: sound-power
-
-**Hyperparameters:**
-- N_Classes: 50
-- AudioDuration: 5
-- AudioSampleRate: 44100
-- ResampleTo: 16000
-- WarmpUp: 10
-- MaxLossOfVisualization: 10
-- LearningRate: 0.001
-- WeightDecay: 5e-05
-- ReduceLROnPlateauMetricsName: validate_loss
-- SchedulerParameter: {'gamma': 0.001, 'milestones': [40, 80]}
-
-**Options:**
-- CacheSize: 2000
-- Device: None
-- TrainID: None
-- SaveDirectory: None
-- CompileModel: False
-- BASE_DIR: None
-- DataSetPath: None
-- TrainSetPath: None
-- TestSetPath: None
-- ValidatePath: None
 
 *Best Epoch*: 445
 
@@ -1320,39 +396,9 @@
 
 ![Loss Curve](std0_bias0_1/experiment_seed_3047/2025-06-04-01-08-34-sound-power/epoch499/loss.png)
 
-![test_confusion_matrix_fig.png](std0_bias0_1/experiment_seed_3047/2025-06-04-01-08-34-sound-power/epoch445/test_confusion_matrix_fig.png)
-![train_confusion_matrix_fig.png](std0_bias0_1/experiment_seed_3047/2025-06-04-01-08-34-sound-power/epoch445/train_confusion_matrix_fig.png)
-![validate_confusion_matrix_fig.png](std0_bias0_1/experiment_seed_3047/2025-06-04-01-08-34-sound-power/epoch445/validate_confusion_matrix_fig.png)
-
-![test_metrics_trends.png](std0_bias0_1/experiment_seed_3047/2025-06-04-01-08-34-sound-power/test_metrics_trends.png)
-![train_metrics_trends.png](std0_bias0_1/experiment_seed_3047/2025-06-04-01-08-34-sound-power/train_metrics_trends.png)
-![validate_metrics_trends.png](std0_bias0_1/experiment_seed_3047/2025-06-04-01-08-34-sound-power/validate_metrics_trends.png)
-
+<p><img src="std0_bias0_1/experiment_seed_3047/2025-06-04-01-08-34-sound-power/epoch445/test_confusion_matrix_fig.png" width="32%"/><img src="std0_bias0_1/experiment_seed_3047/2025-06-04-01-08-34-sound-power/epoch445/train_confusion_matrix_fig.png" width="32%"/><img src="std0_bias0_1/experiment_seed_3047/2025-06-04-01-08-34-sound-power/epoch445/validate_confusion_matrix_fig.png" width="32%"/></p>
+<p><img src="std0_bias0_1/experiment_seed_3047/2025-06-04-01-08-34-sound-power/test_metrics_trends.png" width="32%"/><img src="std0_bias0_1/experiment_seed_3047/2025-06-04-01-08-34-sound-power/train_metrics_trends.png" width="32%"/><img src="std0_bias0_1/experiment_seed_3047/2025-06-04-01-08-34-sound-power/validate_metrics_trends.png" width="32%"/></p>
 #### Setup: air-propagate-latent
-
-**Hyperparameters:**
-- N_Classes: 50
-- AudioDuration: 5
-- WarmpUp: 10
-- MaxLossOfVisualization: 10
-- AudioSampleRate: 44100
-- LearningRate: 0.001
-- WeightDecay: 5e-05
-- ReduceLROnPlateauMetricsName: validate_loss
-- SchedulerParameter: {'gamma': 0.1, 'milestones': [40, 80]}
-- Epochs: None
-
-**Options:**
-- CacheSize: 2000
-- Device: None
-- TrainID: None
-- SaveDirectory: None
-- CompileModel: False
-- BASE_DIR: None
-- DataSetPath: None
-- TrainSetPath: None
-- TestSetPath: None
-- ValidatePath: None
 
 *Best Epoch*: 176
 
@@ -1362,39 +408,9 @@
 
 ![Loss Curve](std0_bias0_1/experiment_seed_3047/2025-06-04-02-21-23-air-propagate-latent/epoch499/loss.png)
 
-![test_confusion_matrix_fig.png](std0_bias0_1/experiment_seed_3047/2025-06-04-02-21-23-air-propagate-latent/epoch176/test_confusion_matrix_fig.png)
-![train_confusion_matrix_fig.png](std0_bias0_1/experiment_seed_3047/2025-06-04-02-21-23-air-propagate-latent/epoch176/train_confusion_matrix_fig.png)
-![validate_confusion_matrix_fig.png](std0_bias0_1/experiment_seed_3047/2025-06-04-02-21-23-air-propagate-latent/epoch176/validate_confusion_matrix_fig.png)
-
-![test_metrics_trends.png](std0_bias0_1/experiment_seed_3047/2025-06-04-02-21-23-air-propagate-latent/test_metrics_trends.png)
-![train_metrics_trends.png](std0_bias0_1/experiment_seed_3047/2025-06-04-02-21-23-air-propagate-latent/train_metrics_trends.png)
-![validate_metrics_trends.png](std0_bias0_1/experiment_seed_3047/2025-06-04-02-21-23-air-propagate-latent/validate_metrics_trends.png)
-
+<p><img src="std0_bias0_1/experiment_seed_3047/2025-06-04-02-21-23-air-propagate-latent/epoch176/test_confusion_matrix_fig.png" width="32%"/><img src="std0_bias0_1/experiment_seed_3047/2025-06-04-02-21-23-air-propagate-latent/epoch176/train_confusion_matrix_fig.png" width="32%"/><img src="std0_bias0_1/experiment_seed_3047/2025-06-04-02-21-23-air-propagate-latent/epoch176/validate_confusion_matrix_fig.png" width="32%"/></p>
+<p><img src="std0_bias0_1/experiment_seed_3047/2025-06-04-02-21-23-air-propagate-latent/test_metrics_trends.png" width="32%"/><img src="std0_bias0_1/experiment_seed_3047/2025-06-04-02-21-23-air-propagate-latent/train_metrics_trends.png" width="32%"/><img src="std0_bias0_1/experiment_seed_3047/2025-06-04-02-21-23-air-propagate-latent/validate_metrics_trends.png" width="32%"/></p>
 #### Setup: End-2-end
-
-**Hyperparameters:**
-- N_Classes: 50
-- N_MIC: 5
-- AudioDuration: 5
-- WarmpUp: 10
-- MaxLossOfVisualization: 10
-- AudioSampleRate: 44100
-- LearningRate: 0.001
-- WeightDecay: 5e-05
-- ReduceLROnPlateauMetricsName: validate_loss
-- SchedulerParameter: {'gamma': 0.1, 'milestones': [40, 80]}
-
-**Options:**
-- CacheSize: 2000
-- Device: None
-- TrainID: None
-- SaveDirectory: None
-- CompileModel: False
-- BASE_DIR: None
-- DataSetPath: None
-- TrainSetPath: None
-- TestSetPath: None
-- ValidatePath: None
 
 *Best Epoch*: 285
 
@@ -1404,41 +420,11 @@
 
 ![Loss Curve](std0_bias0_1/experiment_seed_3047/2025-06-04-03-16-05-End-2-end/epoch299/loss.png)
 
-![test_confusion_matrix_fig.png](std0_bias0_1/experiment_seed_3047/2025-06-04-03-16-05-End-2-end/epoch285/test_confusion_matrix_fig.png)
-![train_confusion_matrix_fig.png](std0_bias0_1/experiment_seed_3047/2025-06-04-03-16-05-End-2-end/epoch285/train_confusion_matrix_fig.png)
-![validate_confusion_matrix_fig.png](std0_bias0_1/experiment_seed_3047/2025-06-04-03-16-05-End-2-end/epoch285/validate_confusion_matrix_fig.png)
-
-![test_metrics_trends.png](std0_bias0_1/experiment_seed_3047/2025-06-04-03-16-05-End-2-end/test_metrics_trends.png)
-![train_metrics_trends.png](std0_bias0_1/experiment_seed_3047/2025-06-04-03-16-05-End-2-end/train_metrics_trends.png)
-![validate_metrics_trends.png](std0_bias0_1/experiment_seed_3047/2025-06-04-03-16-05-End-2-end/validate_metrics_trends.png)
-
+<p><img src="std0_bias0_1/experiment_seed_3047/2025-06-04-03-16-05-End-2-end/epoch285/test_confusion_matrix_fig.png" width="32%"/><img src="std0_bias0_1/experiment_seed_3047/2025-06-04-03-16-05-End-2-end/epoch285/train_confusion_matrix_fig.png" width="32%"/><img src="std0_bias0_1/experiment_seed_3047/2025-06-04-03-16-05-End-2-end/epoch285/validate_confusion_matrix_fig.png" width="32%"/></p>
+<p><img src="std0_bias0_1/experiment_seed_3047/2025-06-04-03-16-05-End-2-end/test_metrics_trends.png" width="32%"/><img src="std0_bias0_1/experiment_seed_3047/2025-06-04-03-16-05-End-2-end/train_metrics_trends.png" width="32%"/><img src="std0_bias0_1/experiment_seed_3047/2025-06-04-03-16-05-End-2-end/validate_metrics_trends.png" width="32%"/></p>
 ### Seed: experiment_seed_65536
 
 #### Setup: sound-power
-
-**Hyperparameters:**
-- N_Classes: 50
-- AudioDuration: 5
-- AudioSampleRate: 44100
-- ResampleTo: 16000
-- WarmpUp: 10
-- MaxLossOfVisualization: 10
-- LearningRate: 0.001
-- WeightDecay: 5e-05
-- ReduceLROnPlateauMetricsName: validate_loss
-- SchedulerParameter: {'gamma': 0.001, 'milestones': [40, 80]}
-
-**Options:**
-- CacheSize: 2000
-- Device: None
-- TrainID: None
-- SaveDirectory: None
-- CompileModel: False
-- BASE_DIR: None
-- DataSetPath: None
-- TrainSetPath: None
-- TestSetPath: None
-- ValidatePath: None
 
 *Best Epoch*: 445
 
@@ -1448,39 +434,9 @@
 
 ![Loss Curve](std0_bias0_1/experiment_seed_65536/2025-06-04-06-29-39-sound-power/epoch499/loss.png)
 
-![test_confusion_matrix_fig.png](std0_bias0_1/experiment_seed_65536/2025-06-04-06-29-39-sound-power/epoch445/test_confusion_matrix_fig.png)
-![train_confusion_matrix_fig.png](std0_bias0_1/experiment_seed_65536/2025-06-04-06-29-39-sound-power/epoch445/train_confusion_matrix_fig.png)
-![validate_confusion_matrix_fig.png](std0_bias0_1/experiment_seed_65536/2025-06-04-06-29-39-sound-power/epoch445/validate_confusion_matrix_fig.png)
-
-![test_metrics_trends.png](std0_bias0_1/experiment_seed_65536/2025-06-04-06-29-39-sound-power/test_metrics_trends.png)
-![train_metrics_trends.png](std0_bias0_1/experiment_seed_65536/2025-06-04-06-29-39-sound-power/train_metrics_trends.png)
-![validate_metrics_trends.png](std0_bias0_1/experiment_seed_65536/2025-06-04-06-29-39-sound-power/validate_metrics_trends.png)
-
+<p><img src="std0_bias0_1/experiment_seed_65536/2025-06-04-06-29-39-sound-power/epoch445/test_confusion_matrix_fig.png" width="32%"/><img src="std0_bias0_1/experiment_seed_65536/2025-06-04-06-29-39-sound-power/epoch445/train_confusion_matrix_fig.png" width="32%"/><img src="std0_bias0_1/experiment_seed_65536/2025-06-04-06-29-39-sound-power/epoch445/validate_confusion_matrix_fig.png" width="32%"/></p>
+<p><img src="std0_bias0_1/experiment_seed_65536/2025-06-04-06-29-39-sound-power/test_metrics_trends.png" width="32%"/><img src="std0_bias0_1/experiment_seed_65536/2025-06-04-06-29-39-sound-power/train_metrics_trends.png" width="32%"/><img src="std0_bias0_1/experiment_seed_65536/2025-06-04-06-29-39-sound-power/validate_metrics_trends.png" width="32%"/></p>
 #### Setup: air-propagate-latent
-
-**Hyperparameters:**
-- N_Classes: 50
-- AudioDuration: 5
-- WarmpUp: 10
-- MaxLossOfVisualization: 10
-- AudioSampleRate: 44100
-- LearningRate: 0.001
-- WeightDecay: 5e-05
-- ReduceLROnPlateauMetricsName: validate_loss
-- SchedulerParameter: {'gamma': 0.1, 'milestones': [40, 80]}
-- Epochs: None
-
-**Options:**
-- CacheSize: 2000
-- Device: None
-- TrainID: None
-- SaveDirectory: None
-- CompileModel: False
-- BASE_DIR: None
-- DataSetPath: None
-- TrainSetPath: None
-- TestSetPath: None
-- ValidatePath: None
 
 *Best Epoch*: 131
 
@@ -1490,39 +446,9 @@
 
 ![Loss Curve](std0_bias0_1/experiment_seed_65536/2025-06-04-07-37-06-air-propagate-latent/epoch499/loss.png)
 
-![test_confusion_matrix_fig.png](std0_bias0_1/experiment_seed_65536/2025-06-04-07-37-06-air-propagate-latent/epoch131/test_confusion_matrix_fig.png)
-![train_confusion_matrix_fig.png](std0_bias0_1/experiment_seed_65536/2025-06-04-07-37-06-air-propagate-latent/epoch131/train_confusion_matrix_fig.png)
-![validate_confusion_matrix_fig.png](std0_bias0_1/experiment_seed_65536/2025-06-04-07-37-06-air-propagate-latent/epoch131/validate_confusion_matrix_fig.png)
-
-![test_metrics_trends.png](std0_bias0_1/experiment_seed_65536/2025-06-04-07-37-06-air-propagate-latent/test_metrics_trends.png)
-![train_metrics_trends.png](std0_bias0_1/experiment_seed_65536/2025-06-04-07-37-06-air-propagate-latent/train_metrics_trends.png)
-![validate_metrics_trends.png](std0_bias0_1/experiment_seed_65536/2025-06-04-07-37-06-air-propagate-latent/validate_metrics_trends.png)
-
+<p><img src="std0_bias0_1/experiment_seed_65536/2025-06-04-07-37-06-air-propagate-latent/epoch131/test_confusion_matrix_fig.png" width="32%"/><img src="std0_bias0_1/experiment_seed_65536/2025-06-04-07-37-06-air-propagate-latent/epoch131/train_confusion_matrix_fig.png" width="32%"/><img src="std0_bias0_1/experiment_seed_65536/2025-06-04-07-37-06-air-propagate-latent/epoch131/validate_confusion_matrix_fig.png" width="32%"/></p>
+<p><img src="std0_bias0_1/experiment_seed_65536/2025-06-04-07-37-06-air-propagate-latent/test_metrics_trends.png" width="32%"/><img src="std0_bias0_1/experiment_seed_65536/2025-06-04-07-37-06-air-propagate-latent/train_metrics_trends.png" width="32%"/><img src="std0_bias0_1/experiment_seed_65536/2025-06-04-07-37-06-air-propagate-latent/validate_metrics_trends.png" width="32%"/></p>
 #### Setup: End-2-end
-
-**Hyperparameters:**
-- N_Classes: 50
-- N_MIC: 5
-- AudioDuration: 5
-- WarmpUp: 10
-- MaxLossOfVisualization: 10
-- AudioSampleRate: 44100
-- LearningRate: 0.001
-- WeightDecay: 5e-05
-- ReduceLROnPlateauMetricsName: validate_loss
-- SchedulerParameter: {'gamma': 0.1, 'milestones': [40, 80]}
-
-**Options:**
-- CacheSize: 2000
-- Device: None
-- TrainID: None
-- SaveDirectory: None
-- CompileModel: False
-- BASE_DIR: None
-- DataSetPath: None
-- TrainSetPath: None
-- TestSetPath: None
-- ValidatePath: None
 
 *Best Epoch*: 127
 
@@ -1532,14 +458,8 @@
 
 ![Loss Curve](std0_bias0_1/experiment_seed_65536/2025-06-04-08-30-35-End-2-end/epoch299/loss.png)
 
-![test_confusion_matrix_fig.png](std0_bias0_1/experiment_seed_65536/2025-06-04-08-30-35-End-2-end/epoch127/test_confusion_matrix_fig.png)
-![train_confusion_matrix_fig.png](std0_bias0_1/experiment_seed_65536/2025-06-04-08-30-35-End-2-end/epoch127/train_confusion_matrix_fig.png)
-![validate_confusion_matrix_fig.png](std0_bias0_1/experiment_seed_65536/2025-06-04-08-30-35-End-2-end/epoch127/validate_confusion_matrix_fig.png)
-
-![test_metrics_trends.png](std0_bias0_1/experiment_seed_65536/2025-06-04-08-30-35-End-2-end/test_metrics_trends.png)
-![train_metrics_trends.png](std0_bias0_1/experiment_seed_65536/2025-06-04-08-30-35-End-2-end/train_metrics_trends.png)
-![validate_metrics_trends.png](std0_bias0_1/experiment_seed_65536/2025-06-04-08-30-35-End-2-end/validate_metrics_trends.png)
-
+<p><img src="std0_bias0_1/experiment_seed_65536/2025-06-04-08-30-35-End-2-end/epoch127/test_confusion_matrix_fig.png" width="32%"/><img src="std0_bias0_1/experiment_seed_65536/2025-06-04-08-30-35-End-2-end/epoch127/train_confusion_matrix_fig.png" width="32%"/><img src="std0_bias0_1/experiment_seed_65536/2025-06-04-08-30-35-End-2-end/epoch127/validate_confusion_matrix_fig.png" width="32%"/></p>
+<p><img src="std0_bias0_1/experiment_seed_65536/2025-06-04-08-30-35-End-2-end/test_metrics_trends.png" width="32%"/><img src="std0_bias0_1/experiment_seed_65536/2025-06-04-08-30-35-End-2-end/train_metrics_trends.png" width="32%"/><img src="std0_bias0_1/experiment_seed_65536/2025-06-04-08-30-35-End-2-end/validate_metrics_trends.png" width="32%"/></p>
 ## Analysis
 
 ### Average F1 Score per Setup and Noise Condition
