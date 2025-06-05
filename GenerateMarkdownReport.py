@@ -156,7 +156,9 @@ def write_report(data, root_dir, out_file):
                         f.write(f"| {metrics['F1 Score']} | {metrics['Accuracy']} | {metrics['Precision']} | {metrics['Recall']} |\n\n")
                     if info['loss_png'] and os.path.exists(info['loss_png']):
                         rel = os.path.relpath(info['loss_png'], root_dir)
-                        f.write(f"![Loss Curve]({rel})\n\n")
+                        loss_format = \
+                            f'''<img src="{rel}" alt="Loss Curve" style="zoom:25%;" />'''
+                        f.write(loss_format + '\n\n')
                     if info['confusion_matrices']:
                         f.write('<p>')
                         for img in info['confusion_matrices']:
@@ -169,16 +171,6 @@ def write_report(data, root_dir, out_file):
                             rel = os.path.relpath(img, root_dir)
                             f.write(f'<img src="{rel}" width="32%"/>')
                         f.write('</p>\n')
-        f.write('## Analysis\n\n')
-        f.write('### Average F1 Score per Setup and Noise Condition\n\n')
-        f.write(format_table(mean_table) + '\n\n')
-        f.write('### Observations\n')
-        f.write('- Noise generally degrades performance. Comparing `std0_bias0` (no noise) and `std0_bias0_1` or `std005_bias0_1` shows a decline in F1 scores across most setups.\n')
-        f.write('- The `ideal-latent` setup, evaluated under `std005_bias0_1`, achieves the highest F1 score, indicating it is not affected by the added noise.\n')
-        f.write('- Among the noisy setups, `air-propagate-latent` maintains better performance compared with `sound-power` and `End-2-end`.\n')
-        f.write('- Standard deviation across seeds is largest for the `End-2-end` setup, indicating higher sensitivity to random initialization.\n')
-        f.write('\n')
-        f.write('### Standard Deviation of F1 Scores Across Seeds\n')
         for noise in sorted(std_table.keys()):
             for setup in sorted(std_table[noise].keys()):
                 std = std_table[noise][setup]
@@ -187,7 +179,7 @@ def write_report(data, root_dir, out_file):
 
 def main():
     parser = argparse.ArgumentParser(description='Generate experiment markdown report')
-    parser.add_argument('root', help='Path to auto_sync directory')
+    parser.add_argument('--root', help='Path to auto_sync directory')
     parser.add_argument('-o', '--output', default='report.md', help='Output markdown file')
     args = parser.parse_args()
     data = collect_data(args.root)
